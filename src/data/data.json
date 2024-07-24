@@ -4,18 +4,18 @@
     "paragraph": ""
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "En Polein, nos especializamos en mantener tus equipos de gimnasio en óptimas condiciones. Con años de experiencia y un equipo de técnicos certificados, garantizamos que tus equipos funcionen de manera fluida, segura y eficiente. Creemos en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza, la fiabilidad y un excelente servicio. Ya sea que manejes un gimnasio comercial o un conjunto de fitness en casa, estamos aquí para asegurarnos de que tus equipos siempre estén en perfectas condiciones.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Técnicos expertos y profesionales",
+      "Atención personalizada",
+      "Reparaciones rápidas y confiables"
+      
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Compromiso con el cliente",
+      "Precios justos y competitivos",
+      "Garantía de servicio"
+      
     ]
   },
   "Gallery": [
@@ -68,33 +68,33 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Mantenimiento Preventivo",
+      "text": "Inspecciones y ajustes regulares para evitar fallos y prolongar la vida útil de los equipos."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Reparación de Equipos",
+      "text": "Diagnóstico y reparación de fallos mecánicos, eléctricos o electrónicos en equipos de gimnasio."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Reemplazo de Piezas",
+      "text": "Suministro e instalación de repuestos originales y de alta calidad para diversos equipos."
     },
     {
       "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Calibración y Ajustes",
+      "text": "Ajustes precisos para garantizar el funcionamiento óptimo y la seguridad de los equipos."
     },
     {
       "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Limpieza de Equipos",
+      "text": "Servicios de limpieza profunda para mantener los equipos en condiciones higiénicas y operativas."
     },
     {
       "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Revisión de Seguridad",
+      "text": "Inspección de los equipos para asegurar que cumplan con los estándares de seguridad y funcionamiento."
     }
   ],
   "Testimonials": [
@@ -162,23 +162,23 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Experiencia y Profesionalismo",
+      "text": "Experiencia y técnicos certificados para ofrecer calidad."
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Servicios Personalizados",
+      "text": "Adaptamos nuestras soluciones a las necesidades específicas de tu gimnasio." 
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Reparaciones Rápidas y Confiables",
+      "text": "Soluciones eficientes y rápidas para minimizar el tiempo de inactividad."
     },
     {
       "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Soporte Continuo",
+      "text": "Asistencia y soporte constante para resolver cualquier inconveniente que surja."
     }
   ]
 }
