@@ -740,6 +740,9 @@
 .fa-magic:before {
   content: "\f0d0";
 }
+.fa-bicycle:before{
+  content: "\f0d0";
+} 
 .fa-truck:before {
   content: "\f0d1";
 }

@@ -22,22 +22,22 @@
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "smallImage": "img/portfolio/1small.jpg"
     },
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "smallImage": "img/portfolio/2small.jpg"
     },
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "smallImage": "img/portfolio/3small.jpg"
     },
     {
       "title": "Project Title",
       "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "smallImage": "img/portfolio/4small.jpg"
     },
     {
       "title": "Project Title",
@@ -152,10 +152,10 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
+    "address": "",
+    "phone": "33 251 171 82",
+    "email": "poleinman@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61562725871176",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },
@@ -176,7 +176,7 @@
       "text": "Soluciones eficientes y rápidas para minimizar el tiempo de inactividad."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-bicycle",
       "title": "Soporte Continuo",
       "text": "Asistencia y soporte constante para resolver cualquier inconveniente que surja."
     }
