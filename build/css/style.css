@@ -583,6 +583,13 @@ label {
   color: #608dfd;
   background: #fff;
 }
+
+.confirmation-message {
+  color: #ff8200;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 /* Footer Section*/
 #footer {
   background: #f6f6f6;
