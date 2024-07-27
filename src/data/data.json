@@ -70,35 +70,44 @@
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "Llevaba tiempo buscando mantenimiento y reparación de mis equipos de gimnasio en Guadalajara. La mayoría de las empresas solo trabajan con ciertas marcas, pero esta me sorprendió al atender equipos de cualquier marca.",
+      "name": "Luis Fernandez"
     },
     {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "Son muy profesionales y puntuales. Detectaron y solucionaron los problemas de nuestras máquinas de inmediato y nos dieron recomendaciones útiles para el mantenimiento preventivo. Ampliamente recomendados!!",
+      "name": "Sofia Martinez"
     },
     {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "Me proporcionaron un presupuesto muy razonable, se adaptaron perfectamente a las necesidades de mi gimnasio y me ayudaron a encontrar un plan de mantenimiento considerando la frecuencia de uso de mis equipos.",
+      "name": "Scarlett Álvarez"
     },
     {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "La calidad del servicio que ofrecen es excelente y los precios son muy razonables. Es una gran inversión para mantener los equipos de gimnasio en perfecto estado.",
+      "name": "Alexander García"
     },
     {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "text": "Son muy precisos en sus diagnósticos, las reparaciones son efectivas y ofrecen garantía en sus servicios. Han reparado varias máquinas que creía perdidas y los precios han sido justos. Los recomiendo ampliamente.",
+      "name": "Antonio Rivera"
     },
     {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "text": "Mi máquina de escalar y mi remo tenían fallas que pensaba que serían difíciles de arreglar. Sin embargo, el equipo de mantenimiento los reparó a la perfección. Agradezco la garantía que ofrecen sobre sus servicios.",
+      "name": "Carlos Vargas"
+    },
+    {
+      "text": "Repararon mi caminadora y la bicicleta estática con gran eficacia. Ambas máquinas estaban en un estado lamentable, pero ahora funcionan como nuevas. Los precios fueron justos y el servicio, excelente.",
+      "name": "David Rodríguez"
+    },
+    {
+      "text": "Tuve problemas con mi máquina de pesas y mi elíptica. La empresa se encargó de ambas reparaciones rápidamente y con precisión. Me sorprendió la calidad del trabajo y la atención al detalle.",
+      "name": "Natalia Ruiz"
+    },
+    {
+      "text": "Estoy muy satisfecho con el servicio recibido. La atención al cliente fue excelente y la reparación de nuestros equipos fue rápida y eficiente. Volveré a contratarlos sin duda.",
+      "name": "Benjamin Torres"
     }
+    
+    
+    
   ],
   "Team": [
     {
