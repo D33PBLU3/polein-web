@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 
 export const Navigation = (props) => {
+  const location = useLocation();
+  const isRootPage = location.pathname === '/';
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -28,37 +31,37 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <a href={isRootPage ? "#features" : "/#features"}  className="page-scroll">
               CARACTERÍSTICAS
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <a href={isRootPage ? "#about" : "/#about"} className="page-scroll">
               ¿QUIÉNES SOMOS?
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href={isRootPage ? "#services" : "/#services"} className="page-scroll">
                 SERVICIOS
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a href={isRootPage ? "#portfolio" : "/#portfolio"} className="page-scroll">
                 GALERÍA
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+              <a href={isRootPage ? "#testimonials" : "/#testimonials"} className="page-scroll">
                 TESTIMONIOS
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a href={isRootPage ? "#team" : "/#team"} className="page-scroll">
                 EQUIPO
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a href={isRootPage ? "#contact" : "/#contact"} className="page-scroll">
                 CONTACTO
               </a>
             </li>

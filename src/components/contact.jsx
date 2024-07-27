@@ -1,7 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const initialState = {
   name: "",
@@ -10,29 +11,39 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
-
+  const location = useLocation();
+  const isRootPage = location.pathname === "/";
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+  const [confirmationMessage, setConfirmationMessage] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
+    {
+      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
+    }
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        "service_polein",
+        "template_tz9ijtt",
+        e.target,
+        "Gb2jANzOJTCSPTPSj"
+      )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log('SUCCESS!', result.status, result.text);
+          setConfirmationMessage('Correo enviado, nosotros nos pondremos en contacto contigo');
           clearState();
         },
         (error) => {
           console.log(error.text);
+          setConfirmationMessage('Hubo un error al enviar el correo. Inténtalo nuevamente.');
         }
       );
   };
@@ -45,7 +56,8 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Contáctanos</h2>
                 <p>
-                Completa el formulario a continuación para enviarnos un correo electrónico y te responderemos lo antes posible.
+                  Completa el formulario a continuación para enviarnos un correo
+                  electrónico y te responderemos lo antes posible.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -96,6 +108,7 @@ export const Contact = (props) => {
                   Enviar Mensaje
                 </button>
               </form>
+              {confirmationMessage && <p className="confirmation-message">{confirmationMessage}</p>}
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
@@ -153,7 +166,11 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-          <Link to="/terms-and-conditions">Terms and Conditions</Link>
+            {isRootPage ? (
+              <Link to="/terms-and-conditions">Política de Privacidad</Link>
+            ) : (
+              <></>
+            )}
           </p>
         </div>
       </div>
