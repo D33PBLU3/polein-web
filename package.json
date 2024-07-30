@@ -17,9 +17,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "add-domain": "echo \"polein.com.mx\" > build/CNAME",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run add-domain && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
