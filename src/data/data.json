@@ -34,6 +34,30 @@
     {
       "largeImage": "img/portfolio/4large.jpg",
       "smallImage": "img/portfolio/4small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/5large.jpg",
+      "smallImage": "img/portfolio/5small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/6large.jpg",
+      "smallImage": "img/portfolio/6small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/7large.jpg",
+      "smallImage": "img/portfolio/7small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/8large.jpg",
+      "smallImage": "img/portfolio/8small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/9large.jpg",
+      "smallImage": "img/portfolio/9small.jpg"
+    },
+    {
+      "largeImage": "img/portfolio/10large.jpg",
+      "smallImage": "img/portfolio/10small.jpg"
     }
   ],
   "Services": [
