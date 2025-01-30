@@ -6,11 +6,12 @@ import { useLocation } from "react-router-dom";
 
 const initialState = {
   name: "",
+  phone: "",
   email: "",
   message: "",
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, phone, email, message }, setState] = useState(initialState);
   const location = useLocation();
   const isRootPage = location.pathname === "/";
   const handleChange = (e) => {
@@ -22,7 +23,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(name, phone, email, message);
 
     {
       /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
@@ -70,6 +71,20 @@ export const Contact = (props) => {
                         name="name"
                         className="form-control"
                         placeholder="Nombre"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="phone"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Teléfono"
                         required
                         onChange={handleChange}
                       />
