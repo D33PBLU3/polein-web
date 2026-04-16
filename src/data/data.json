@@ -4,92 +4,60 @@
     "paragraph": ""
   },
   "About": {
-    "paragraph": "En Polein, nos especializamos en mantener tus equipos de gimnasio en óptimas condiciones. Con años de experiencia y un equipo de técnicos certificados, garantizamos que tus equipos funcionen de manera fluida, segura y eficiente. Creemos en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza, la fiabilidad y un excelente servicio. Ya sea que manejes un gimnasio comercial o un conjunto de fitness en casa, estamos aquí para asegurarnos de que tus equipos siempre estén en perfectas condiciones.",
+    "paragraph": "En Polein, nos especializamos en mantener sus equipos de gimnasio en óptimas condiciones. Con años de experiencia y un equipo de técnicos certificados, garantizamos que sus equipos funcionen de manera óptima, segura y eficiente. Creemos en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza, la fiabilidad y un excelente servicio. Ya sea que administre un gimnasio comercial o cuente con un conjunto de equipos de ejercicio en casa, estamos aquí para asegurarnos de que sus equipos se mantengan siempre en perfectas condiciones.",
     "Why": [
       "Técnicos expertos y profesionales",
       "Atención personalizada",
       "Reparaciones rápidas y confiables"
-      
     ],
     "Why2": [
       "Compromiso con el cliente",
       "Precios justos y competitivos",
       "Garantía de servicio"
-      
     ]
   },
   "Gallery": [
-    {
-      "largeImage": "img/portfolio/1large.jpg",
-      "smallImage": "img/portfolio/1small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/2large.jpg",
-      "smallImage": "img/portfolio/2small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/3large.jpg",
-      "smallImage": "img/portfolio/3small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/4large.jpg",
-      "smallImage": "img/portfolio/4small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/5large.jpg",
-      "smallImage": "img/portfolio/5small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/6large.jpg",
-      "smallImage": "img/portfolio/6small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/7large.jpg",
-      "smallImage": "img/portfolio/7small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/8large.jpg",
-      "smallImage": "img/portfolio/8small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/9large.jpg",
-      "smallImage": "img/portfolio/9small.jpg"
-    },
-    {
-      "largeImage": "img/portfolio/10large.jpg",
-      "smallImage": "img/portfolio/10small.jpg"
-    }
+    { "smallImage": "img/portfolio/1small.jpg" },
+    { "smallImage": "img/portfolio/2small.jpg" },
+    { "smallImage": "img/portfolio/3small.jpg" },
+    { "smallImage": "img/portfolio/4small.jpg" },
+    { "smallImage": "img/portfolio/5small.jpg" },
+    { "smallImage": "img/portfolio/6small.jpg" },
+    { "smallImage": "img/portfolio/7small.jpg" },
+    { "smallImage": "img/portfolio/8small.jpg" },
+    { "smallImage": "img/portfolio/9small.jpg" },
+    { "smallImage": "img/portfolio/10small.jpg" }
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "fa fa-wrench",
       "name": "Mantenimiento Preventivo",
-      "text": "Inspecciones y ajustes regulares para evitar fallos y prolongar la vida útil de los equipos."
+      "text": "Revisión, limpieza y lubricación de su equipo, con ajuste y calibración para evitar fallos y prolongar la vida útil de los equipos."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Reparación de Equipos",
-      "text": "Diagnóstico y reparación de fallos mecánicos, eléctricos o electrónicos en equipos de gimnasio."
+      "icon": "fa fa-search",
+      "name": "Revisión y Reparación de Equipos",
+      "text": "Soluciones técnicas integrales orientadas a la detección, análisis y reparación de fallas."
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "fa fa-puzzle-piece",
       "name": "Reemplazo de Piezas",
-      "text": "Suministro e instalación de repuestos originales y de alta calidad para diversos equipos."
+      "text": "Suministro e instalación de piezas originales o genéricas, según las necesidades del equipo y las preferencias del cliente."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Calibración y Ajustes",
-      "text": "Ajustes precisos para garantizar el funcionamiento óptimo y la seguridad de los equipos."
+      "icon": "fa fa-gavel",
+      "name": "Armado de Equipos",
+      "text": "Ensamblaje profesional de equipos nuevos o reubicados, cuidando cada detalle para garantizar un óptimo desempeño."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Limpieza de Equipos",
-      "text": "Servicios de limpieza profunda para mantener los equipos en condiciones higiénicas y operativas."
+      "icon": "fa fa-th",
+      "name": "Instalación de Piso",
+      "text": "Colocación de piso deportivo adaptado a las necesidades de su espacio."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Revisión de Seguridad",
-      "text": "Inspección de los equipos para asegurar que cumplan con los estándares de seguridad y funcionamiento."
+      "icon": "fa fa-tag",
+      "name": "Venta de Equipos",
+      "text": "Venta de equipos fitness adaptados a sus necesidades y presupuesto."
     }
   ],
   "Testimonials": [
@@ -106,10 +74,6 @@
       "name": "Scarlett Álvarez"
     },
     {
-      "text": "La calidad del servicio que ofrecen es excelente y los precios son muy razonables. Es una gran inversión para mantener los equipos de gimnasio en perfecto estado.",
-      "name": "Alexander García"
-    },
-    {
       "text": "Son muy precisos en sus diagnósticos, las reparaciones son efectivas y ofrecen garantía en sus servicios. Han reparado varias máquinas que creía perdidas y los precios han sido justos. Los recomiendo ampliamente.",
       "name": "Antonio Rivera"
     },
@@ -122,16 +86,13 @@
       "name": "David Rodríguez"
     },
     {
-      "text": "Tuve problemas con mi máquina de pesas y mi elíptica. La empresa se encargó de ambas reparaciones rápidamente y con precisión. Me sorprendió la calidad del trabajo y la atención al detalle.",
-      "name": "Natalia Ruiz"
+      "text": "Excelente servicio, hable por teléfono y desde ahí tuvieron muy buena atención, los técnicos muy profesionales, gracias.",
+      "name": "César García"
     },
     {
-      "text": "Estoy muy satisfecho con el servicio recibido. La atención al cliente fue excelente y la reparación de nuestros equipos fue rápida y eficiente. Volveré a contratarlos sin duda.",
-      "name": "Benjamin Torres"
+      "text": "La atención y el servicio es muy profesional. Los precios de las reparaciones, bastante accesibles. Lo recomiendo.",
+      "name": "Angelica Nares"
     }
-    
-    
-    
   ],
   "Team": [
     {
@@ -160,29 +121,28 @@
     "phone": "33 251 171 82",
     "email": "poleinman@gmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=61562725871176",
-    "twitter": "twitter.com",
     "youtube": "https://wa.me/3325117182"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fa fa-certificate",
       "title": "Experiencia y Profesionalismo",
-      "text": "Experiencia y técnicos certificados para ofrecer calidad."
+      "text": "Técnicos certificados para ofrecer servicios de calidad."
     },
     {
-      "icon": "fa fa-bullhorn",
+      "icon": "fa fa-cogs",
       "title": "Servicios Personalizados",
-      "text": "Adaptamos nuestras soluciones a las necesidades específicas de tu gimnasio." 
+      "text": "Adaptamos nuestras soluciones según sus requerimientos y equipos."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Reparaciones Rápidas y Confiables",
-      "text": "Soluciones eficientes y rápidas para minimizar el tiempo de inactividad."
+      "icon": "fa fa-wrench",
+      "title": "Reparaciones Confiables",
+      "text": "Soluciones eficientes y duraderas para minimizar el tiempo de inactividad."
     },
     {
-      "icon": "fa fa-bicycle",
+      "icon": "fa fa-headphones",
       "title": "Soporte Continuo",
-      "text": "Asistencia y soporte constante para resolver cualquier inconveniente que surja."
+      "text": "Asistencia y soporte constante para garantizar el rendimiento de sus equipos."
     }
   ]
 }

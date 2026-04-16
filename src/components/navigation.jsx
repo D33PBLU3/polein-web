@@ -31,13 +31,13 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href={isRootPage ? "#features" : "/#features"}  className="page-scroll">
-              CARACTERÍSTICAS
+              <a href={isRootPage ? "#about" : "/#about"} className="page-scroll">
+                ¿QUIÉNES SOMOS?
               </a>
             </li>
             <li>
-              <a href={isRootPage ? "#about" : "/#about"} className="page-scroll">
-              ¿QUIÉNES SOMOS?
+              <a href={isRootPage ? "#features" : "/#features"} className="page-scroll">
+                NOS DISTINGUE
               </a>
             </li>
             <li>
@@ -57,7 +57,7 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href={isRootPage ? "#contact" : "/#contact"} className="page-scroll">
-                CONTACTO
+                CONTÁCTANOS
               </a>
             </li>
           </ul>

@@ -23,12 +23,6 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, phone, email, message);
-
-    {
-      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
-    }
-
     emailjs
       .sendForm(
         "service_polein",
@@ -37,13 +31,11 @@ export const Contact = (props) => {
         "Gb2jANzOJTCSPTPSj"
       )
       .then(
-        (result) => {
-          console.log('SUCCESS!', result.status, result.text);
-          setConfirmationMessage('Correo enviado, nosotros nos pondremos en contacto contigo');
+        () => {
+          setConfirmationMessage('Gracias por contactarnos. Hemos recibido su mensaje y en breve nos comunicaremos con usted.');
           clearState();
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           setConfirmationMessage('Hubo un error al enviar el correo. Inténtalo nuevamente.');
         }
       );
@@ -57,8 +49,7 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>Contáctanos</h2>
                 <p>
-                  Completa el formulario a continuación para enviarnos un correo
-                  electrónico y te responderemos lo antes posible.
+                  Le invitamos a completar el siguiente formulario para enviarnos un correo electrónico; con gusto le daremos respuesta a la brevedad.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -165,11 +156,6 @@ export const Contact = (props) => {
                   <li>
                     <a href={props.data ? props.data.facebook : "/"}>
                       <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
