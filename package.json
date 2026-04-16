@@ -17,10 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "add-domain": "echo \"polein.com.mx\" > build/CNAME",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "npm run add-domain && gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,8 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
