@@ -208,7 +208,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/polein-intro3.jpg) center center no-repeat;
+  background: url("../img/polein-header.webp") center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -241,8 +241,11 @@ a:focus,
 }
 header .intro-text {
   padding-top: 350px;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
   text-align: center;
+}
+header .intro-text .btn-custom {
+  margin-top: 40px;
 }
 /* Features Section */
 #features {
@@ -306,6 +309,7 @@ header .intro-text {
 #about p {
   line-height: 24px;
   margin: 30px 0;
+  text-align: justify;
 }
 /* Services Section */
 #services {
@@ -364,40 +368,10 @@ header .intro-text {
   margin: 0;
 }
 .hover-bg .hover-text {
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  color: #fff;
-  background: linear-gradient(
-    to right,
-    rgba(255, 130, 0, 0.4) 0%,
-    rgba(252, 130, 0, 0.4) 100%
-  );
-  padding: 30% 0 0;
-  height: 100%;
-  width: 77%;
-  opacity: 0;
-  transition: all 0.5s;
-}
-.hover-bg .hover-text > h4 {
-  opacity: 0;
-  color: #fff;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  transition: all 0.3s;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.hover-bg:hover .hover-text > h4 {
-  opacity: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+  display: none;
 }
 .hover-bg:hover .hover-text {
-  opacity: 1;
+  display: none;
 }
 /* Testimonials Section */
 #testimonials {
@@ -413,20 +387,8 @@ header .intro-text {
   position: relative;
   padding: 20px;
 }
-.testimonial-image {
-  float: left;
-  margin-right: 15px;
-}
-.testimonial-image,
-.testimonial-image img {
-  display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
 .testimonial-content {
   position: relative;
-  overflow: hidden;
 }
 .testimonial-content p {
   margin-bottom: 0;
@@ -500,12 +462,13 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
+  background: #ff8200;
+  border: 2px solid #ff8200;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: #fff;
+  background: #e57300;
+  border-color: #e57300;
 }
 label {
   font-size: 12px;
@@ -587,7 +550,8 @@ label {
 .confirmation-message {
   color: #ff8200;
   font-weight: bold;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 /* Footer Section*/
