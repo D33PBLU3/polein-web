@@ -227,6 +227,11 @@ a:focus,
   margin-top: 0;
   margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .intro h1 {
+    font-size: 42px;
+  }
+}
 .intro h1 span {
   font-weight: 800;
   color: #ff8200;
@@ -247,6 +252,18 @@ header .intro-text {
 header .intro-text .btn-custom {
   margin-top: 40px;
 }
+@media (max-width: 767px) {
+  .intro p {
+    font-size: 16px;
+  }
+  header .intro-text {
+    padding-top: 180px;
+    padding-bottom: 80px;
+  }
+  header .intro-text .btn-custom {
+    margin-top: 20px;
+  }
+}
 /* Features Section */
 #features {
   background: #f6f6f6;
@@ -262,6 +279,14 @@ header .intro-text .btn-custom {
   border-radius: 50%;
   background: linear-gradient(to right, #ff8200 0%, #ff8200 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 767px) {
+  #features i.fa {
+    width: 72px;
+    height: 72px;
+    font-size: 28px;
+    padding: 22px 0;
+  }
 }
 /* About Section */
 #about {
@@ -301,6 +326,7 @@ header .intro-text .btn-custom {
 }
 #about img {
   width: 520px;
+  max-width: 100%;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
@@ -573,5 +599,15 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+  #menu.navbar-default .navbar-nav > li > a {
+    margin: 0;
+    padding: 12px 15px;
+  }
+  #contact h3 {
+    margin-top: 40px;
+  }
+  #contact .social ul li {
+    margin: 0 10px;
   }
 }

@@ -44,7 +44,7 @@ export const Contact = (props) => {
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
+          <div className="col-xs-12 col-md-8">
             <div className="row">
               <div className="section-title">
                 <h2>Contáctanos</h2>
@@ -54,7 +54,7 @@ export const Contact = (props) => {
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-xs-12 col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
@@ -68,7 +68,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-xs-12 col-md-6">
                     <div className="form-group">
                       <input
                         type="phone"
@@ -82,7 +82,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-xs-12 col-md-6">
                     <div className="form-group">
                       <input
                         type="email"
@@ -117,7 +117,7 @@ export const Contact = (props) => {
               {confirmationMessage && <p className="confirmation-message">{confirmationMessage}</p>}
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
+          <div className="col-xs-12 col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Datos de Contacto</h3>
               <p>
