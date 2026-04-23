@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 export const Navigation = (props) => {
   const location = useLocation();
   const isRootPage = location.pathname === '/';
+  const phone = props.data ? props.data.phone : "";
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -76,6 +77,11 @@ export const Navigation = (props) => {
               </a>
             </li>
           </ul>
+          <div className="nav-contact-btns">
+            <a href={`tel:${phone.replace(/\s/g, "")}`} className="nav-btn nav-btn-call">
+              <i className="fa fa-phone"></i> {phone}
+            </a>
+          </div>
         </div>
       </div>
     </nav>

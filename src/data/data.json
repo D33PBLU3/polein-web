@@ -28,6 +28,12 @@
     { "smallImage": "img/portfolio/9small.jpg" },
     { "smallImage": "img/portfolio/10small.jpg" }
   ],
+  "Stats": [
+    { "value": "+500", "label": "Equipos reparados" },
+    { "value": "+8", "label": "Años de experiencia" },
+    { "value": "+50", "label": "Clientes activos" },
+    { "value": "100%", "label": "Garantía de servicio" }
+  ],
   "Faq": {
     "title": "PREGUNTAS FRECUENTES",
     "subtitle": "Resolvemos sus dudas más comunes.",
@@ -211,6 +217,11 @@
       "icon": "fa fa-headphones",
       "title": "Soporte Continuo",
       "text": "Asistencia y soporte constante para garantizar el rendimiento de sus equipos."
+    },
+    {
+      "icon": "fa fa-qrcode",
+      "title": "Control Inteligente",
+      "text": "Seguimiento en tiempo real con QR por equipo, historial de servicios y alertas de mantenimiento."
     }
   ]
 }

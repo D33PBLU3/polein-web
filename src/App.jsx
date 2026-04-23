@@ -11,6 +11,8 @@ import { Faq } from "./components/faq";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Contact } from "./components/contact";
+import { Stats } from "./components/stats";
+import { WhatsAppButton } from "./components/whatsappbutton";
 import TermsAndConditions from './components/TermsAndConditions';
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -34,8 +36,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <Navigation />
+              <Navigation data={landingPageData.Contact} />
               <Header data={landingPageData.Header} />
+              <Stats data={landingPageData.Stats} />
               <About data={landingPageData.About} />
               <Features data={landingPageData.Features} />
               <Services data={landingPageData.Services} />
@@ -45,6 +48,7 @@ const App = () => {
               <Testimonials data={landingPageData.Testimonials} />
               <Faq data={landingPageData.Faq} />
               <Contact data={landingPageData.Contact} />
+              <WhatsAppButton link={landingPageData.Contact ? landingPageData.Contact.youtube : ""} />
             </>
           } />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
