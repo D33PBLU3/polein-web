@@ -28,6 +28,52 @@
     { "smallImage": "img/portfolio/9small.jpg" },
     { "smallImage": "img/portfolio/10small.jpg" }
   ],
+  "Tracking": {
+    "title": "CONTROL INTELIGENTE",
+    "subtitle": "Cada equipo cuenta con un código QR único que conecta a técnicos y administradores en un sistema de seguimiento en tiempo real.",
+    "steps": [
+      {
+        "icon": "fa fa-qrcode",
+        "title": "QR en Cada Equipo",
+        "text": "Instalamos un código QR en cada máquina. Al escanearlo, técnicos y administradores acceden al historial completo del equipo al instante."
+      },
+      {
+        "icon": "fa fa-file-text",
+        "title": "Reportes en Tiempo Real",
+        "text": "Cada visita, ajuste o incidencia queda registrada digitalmente. El historial de cada equipo siempre disponible y actualizado."
+      },
+      {
+        "icon": "fa fa-bell",
+        "title": "Alertas de Mantenimiento",
+        "text": "El sistema notifica cuando un equipo requiere atención, anticipándose a fallas y prolongando la vida útil de su inversión."
+      }
+    ]
+  },
+  "Clients": {
+    "subtitle": "Brindamos servicio a una amplia variedad de clientes que confían en nosotros para el cuidado de su equipo fitness.",
+    "types": [
+      {
+        "icon": "fa fa-building",
+        "name": "Gimnasios",
+        "text": "Mantenimiento de flotas completas de equipo cardio y de fuerza para centros deportivos."
+      },
+      {
+        "icon": "fa fa-bed",
+        "name": "Hoteles",
+        "text": "Servicio continuo para los centros fitness de hoteles y resorts, garantizando disponibilidad para sus huéspedes."
+      },
+      {
+        "icon": "fa fa-home",
+        "name": "Condominios",
+        "text": "Atención especializada para los gimnasios de áreas comunes en desarrollos residenciales."
+      },
+      {
+        "icon": "fa fa-user",
+        "name": "Particulares",
+        "text": "Reparación y mantenimiento de equipos de uso personal en el hogar."
+      }
+    ]
+  },
   "Services": [
     {
       "icon": "fa fa-wrench",

@@ -5,6 +5,8 @@ import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
+import { Clients } from "./components/clients";
+import { Tracking } from "./components/tracking";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Contact } from "./components/contact";
@@ -36,6 +38,8 @@ const App = () => {
               <About data={landingPageData.About} />
               <Features data={landingPageData.Features} />
               <Services data={landingPageData.Services} />
+              <Tracking data={landingPageData.Tracking} />
+              <Clients data={landingPageData.Clients} />
               <Gallery data={landingPageData.Gallery} />
               <Testimonials data={landingPageData.Testimonials} />
               <Contact data={landingPageData.Contact} />
