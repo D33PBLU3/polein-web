@@ -66,6 +66,11 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
+              <a href={isRootPage ? "#faq" : "/#faq"} className="page-scroll">
+                FAQ
+              </a>
+            </li>
+            <li>
               <a href={isRootPage ? "#contact" : "/#contact"} className="page-scroll">
                 CONTÁCTANOS
               </a>

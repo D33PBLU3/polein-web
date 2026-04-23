@@ -28,6 +28,28 @@
     { "smallImage": "img/portfolio/9small.jpg" },
     { "smallImage": "img/portfolio/10small.jpg" }
   ],
+  "Faq": {
+    "title": "PREGUNTAS FRECUENTES",
+    "subtitle": "Resolvemos sus dudas más comunes.",
+    "items": [
+      {
+        "question": "¿En qué zonas dan servicio?",
+        "answer": "Atendemos toda la zona metropolitana de Guadalajara. Para clientes foráneos, evaluamos el costo de viáticos y traslado según la ubicación — contáctenos para obtener una cotización personalizada."
+      },
+      {
+        "question": "¿Trabajan con todas las marcas de equipos?",
+        "answer": "Sí, ofrecemos mantenimiento preventivo para todas las marcas. En cuanto a reparaciones, evaluamos cada equipo de forma individual y adaptamos el método de intervención a las particularidades de cada marca y modelo."
+      },
+      {
+        "question": "¿En qué consiste el mantenimiento preventivo?",
+        "answer": "Nuestro servicio incluye una inspección completa del equipo, limpieza profunda, lubricación de partes móviles, ajuste de componentes, verificación de sistemas eléctricos y las correcciones menores que se detecten durante la visita. El objetivo es que su equipo opere de forma segura, eficiente y con la mayor vida útil posible."
+      },
+      {
+        "question": "¿Cómo puedo agendar un servicio?",
+        "answer": "Puede contactarnos por WhatsApp o correo electrónico y le asignaremos una fecha a su mejor conveniencia. Nuestro equipo le responderá a la brevedad para coordinar todos los detalles."
+      }
+    ]
+  },
   "Tracking": {
     "title": "CONTROL INTELIGENTE",
     "subtitle": "Cada equipo cuenta con un código QR único que conecta a técnicos y administradores en un sistema de seguimiento en tiempo real.",
