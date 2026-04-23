@@ -48,11 +48,14 @@ const App = () => {
               <Testimonials data={landingPageData.Testimonials} />
               <Faq data={landingPageData.Faq} />
               <Contact data={landingPageData.Contact} />
-              <WhatsAppButton link={landingPageData.Contact ? landingPageData.Contact.youtube : ""} />
             </>
           } />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         </Routes>
+        <WhatsAppButton
+          link={landingPageData.Contact ? landingPageData.Contact.youtube : ""}
+          phone={landingPageData.Contact ? landingPageData.Contact.phone : ""}
+        />
       </div>
     </Router>
   );
