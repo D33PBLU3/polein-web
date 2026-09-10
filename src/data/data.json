@@ -132,6 +132,11 @@
       "icon": "fa fa-tag",
       "name": "Venta de Equipos",
       "text": "Venta de equipos fitness adaptados a sus necesidades y presupuesto."
+    },
+    {
+      "icon": "fa fa-scissors",
+      "name": "Tapizado de Equipos",
+      "text": "Renovación y reparación de tapizado en bancas, asientos y respaldos para devolver la imagen y comodidad original a sus equipos."
     }
   ],
   "Testimonials": [

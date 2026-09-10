@@ -1015,6 +1015,13 @@ header .intro-text .btn-custom {
   background: #e57300;
   border-color: #e57300;
 }
+#contact .btn-custom[disabled],
+#contact .btn-custom[disabled]:hover {
+  background: #b35b00;
+  border-color: #b35b00;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
 label {
   font-size: 12px;
   font-weight: 400;

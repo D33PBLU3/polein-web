@@ -20,9 +20,13 @@ export const Contact = (props) => {
   };
   const clearState = () => setState({ ...initialState });
   const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
+    setConfirmationMessage('');
     emailjs
       .sendForm(
         "service_polein",
@@ -34,9 +38,11 @@ export const Contact = (props) => {
         () => {
           setConfirmationMessage('Gracias por contactarnos. Hemos recibido su mensaje y en breve nos comunicaremos con usted.');
           clearState();
+          setIsSubmitting(false);
         },
         () => {
           setConfirmationMessage('Hubo un error al enviar el correo. Inténtalo nuevamente.');
+          setIsSubmitting(false);
         }
       );
   };
@@ -52,7 +58,7 @@ export const Contact = (props) => {
                   Le invitamos a completar el siguiente formulario para enviarnos un correo electrónico; con gusto le daremos respuesta a la brevedad.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-xs-12 col-md-6">
                     <div className="form-group">
@@ -63,6 +69,8 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Nombre"
                         required
+                        autoComplete="name"
+                        value={name}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -71,12 +79,15 @@ export const Contact = (props) => {
                   <div className="col-xs-12 col-md-6">
                     <div className="form-group">
                       <input
-                        type="phone"
+                        type="tel"
                         id="phone"
                         name="phone"
                         className="form-control"
                         placeholder="Teléfono"
                         required
+                        inputMode="tel"
+                        autoComplete="tel"
+                        value={phone}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -91,6 +102,9 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Correo electrónico"
                         required
+                        inputMode="email"
+                        autoComplete="email"
+                        value={email}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -105,16 +119,25 @@ export const Contact = (props) => {
                     rows="4"
                     placeholder="Mensaje"
                     required
+                    value={message}
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Enviar Mensaje
+                {confirmationMessage && (
+                  <p className="confirmation-message" role="status" aria-live="polite">
+                    {confirmationMessage}
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  className="btn btn-custom btn-lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
                 </button>
               </form>
-              {confirmationMessage && <p className="confirmation-message">{confirmationMessage}</p>}
             </div>
           </div>
           <div className="col-xs-12 col-md-3 col-md-offset-1 contact-info">
