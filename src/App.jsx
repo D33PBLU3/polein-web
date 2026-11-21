@@ -15,6 +15,7 @@ import { Stats } from "./components/stats";
 import { WhatsAppButton } from "./components/whatsappbutton";
 import TermsAndConditions from './components/TermsAndConditions';
 import JsonData from "./data/data.json";
+import { initTracking } from "./utils/analytics";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
@@ -27,6 +28,7 @@ const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
+    initTracking();
   }, []);
 
 
@@ -37,7 +39,7 @@ const App = () => {
           <Route path="/" element={
             <>
               <Navigation data={landingPageData.Contact} />
-              <Header data={landingPageData.Header} />
+              <Header data={landingPageData.Header} contact={landingPageData.Contact} />
               <Stats data={landingPageData.Stats} />
               <About data={landingPageData.About} />
               <Features data={landingPageData.Features} />

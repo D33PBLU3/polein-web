@@ -11,7 +11,7 @@ yarn install           # install deps
 yarn start             # dev server on localhost:3000
 npm run build          # production build → build/
 npm test               # run test suite (react-scripts test)
-npm run deploy         # build + write CNAME + push to gh-pages branch
+git push origin main    # deploys: GitHub Actions builds and publishes to GitHub Pages
 ```
 
 ## Non-obvious conventions
@@ -26,7 +26,11 @@ npm run deploy         # build + write CNAME + push to gh-pages branch
 
 - **EmailJS credentials are in source:** Service ID, template ID, and public key are hardcoded in `src/components/contact.jsx`. There is no `.env` file. See `docs/emailjs.md` before modifying the contact form.
 
-- **`Header.title` and `Header.paragraph` are intentionally empty** in `data.json` — the intro section uses a full-bleed background image (`public/img/polein-intro3.jpg`) and no text overlay.
+- **The hero headline is baked into the banner image** (`public/img/polein-header.webp`). `Header.title` renders as a screen-reader/SEO-only `<h1 className="sr-only">` — no visible text overlay. Only the CTA buttons (`Header.ctaPrimary` = WhatsApp, `Header.ctaSecondary` = services) sit on top. On mobile (<768px) the banner is shown uncropped (`background-size: 100% auto`) with the buttons below it on navy, because `cover` cropped the image's headline.
+
+- **Tracking IDs live in `src/config/tracking.js`** (GA4, Google Ads, Meta Pixel). An empty ID = that platform never loads. `src/utils/analytics.js` uses one document-level click listener that auto-tracks every `wa.me` link (`whatsapp_click`) and `tel:` link (`call_click`); the contact form fires `generate_lead` on success. New WhatsApp/phone links need no extra tracking code.
+
+- **`public/css/style.css` uses CRLF line endings** — preserve them when editing with scripts, or the whole file shows as changed.
 
 - **`Team` data has placeholder names** (John Doe, etc.) — the section is rendered but the names/photos have not been updated with real data.
 

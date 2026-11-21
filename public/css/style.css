@@ -328,7 +328,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url("../img/polein-header.webp") center center no-repeat;
+  background: url("../img/polein-header.webp") left center no-repeat; /* keep the headline (left side) in view when cropped */
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -372,16 +372,69 @@ header .intro-text {
 header .intro-text .btn-custom {
   margin-top: 40px;
 }
+.intro-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+header .intro-text .intro-ctas .btn {
+  margin: 0;
+}
+.intro-ctas .btn-whatsapp,
+.intro-ctas .btn-whatsapp:focus {
+  background: #25d366;
+  background-image: none;
+  border: 2px solid #25d366;
+}
+.intro-ctas .btn-whatsapp:hover {
+  background: #1ebe5d;
+  border-color: #1ebe5d;
+}
+.intro-ctas .btn-whatsapp .fa {
+  font-size: 20px;
+  margin-right: 6px;
+}
+.intro-ctas .btn-outline-light {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 34px;
+  color: #fff;
+  background: rgba(0, 38, 58, 0.55);
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+.intro-ctas .btn-outline-light:hover,
+.intro-ctas .btn-outline-light:focus {
+  color: #00263a;
+  background: #fff;
+}
+/* Mobile: show the whole banner (its headline is part of the image and gets
+   cropped by background-size: cover), with the buttons below it on navy. */
 @media (max-width: 767px) {
-  .intro p {
-    font-size: 16px;
+  .intro {
+    background-size: 100% auto;
+    background-position: center 81px; /* below the fixed navbar */
+    background-color: #00263a;
+  }
+  .intro .overlay {
+    background: none;
   }
   header .intro-text {
-    padding-top: 180px;
-    padding-bottom: 80px;
+    padding-top: calc(81px + 38vw + 20px);
+    padding-bottom: 24px;
   }
-  header .intro-text .btn-custom {
-    margin-top: 20px;
+  .intro-ctas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .intro-ctas .btn,
+  .intro-ctas .btn-outline-light {
+    width: 100%;
+    white-space: normal;
+    padding: 12px 16px;
+    font-size: 15px;
   }
 }
 /* Features Section */

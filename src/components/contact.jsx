@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { trackEvent } from "../utils/analytics";
 
 const initialState = {
   name: "",
@@ -36,6 +37,7 @@ export const Contact = (props) => {
       )
       .then(
         () => {
+          trackEvent("generate_lead", { location: "contact_form" });
           setConfirmationMessage('Gracias por contactarnos. Hemos recibido su mensaje y en breve nos comunicaremos con usted.');
           clearState();
           setIsSubmitting(false);
