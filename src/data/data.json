@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Mantenimiento y reparación de equipos de gimnasio en Guadalajara",
-    "ctaPrimary": "Cotiza gratis por WhatsApp",
+    "ctaPrimary": "Cotiza por WhatsApp",
     "ctaSecondary": "Ver servicios"
   },
   "About": {
@@ -45,7 +45,7 @@
       },
       {
         "question": "¿Trabajan con todas las marcas de equipos?",
-        "answer": "Sí, ofrecemos mantenimiento preventivo para todas las marcas. En cuanto a reparaciones, evaluamos cada equipo de forma individual y adaptamos el método de intervención a las particularidades de cada marca y modelo."
+        "answer": "Sí, ofrecemos mantenimiento preventivo para todas las marcas, como Life Fitness, Precor, Matrix, Technogym y Star Trac. En cuanto a reparaciones, evaluamos cada equipo de forma individual y adaptamos el método de intervención a las particularidades de cada marca y modelo."
       },
       {
         "question": "¿En qué consiste el mantenimiento preventivo?",
@@ -201,7 +201,9 @@
     "phone": "33 251 171 82",
     "email": "poleinman@gmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=61562725871176",
-    "youtube": "https://wa.me/3325117182"
+    "youtube": "https://wa.me/3325117182",
+    "twitter": "",
+    "hours": "Lunes a sábado, 9:00 a 18:00"
   },
   "Features": [
     {
@@ -348,5 +350,129 @@
         ]
       }
     ]
+  },
+  "Brands": {
+    "title": "EQUIPOS Y MARCAS QUE ATENDEMOS",
+    "subtitle": "Reparamos y damos mantenimiento a caminadoras, elípticas, bicicletas fijas y de spinning, escaladoras, remos, multiestaciones y equipo de fuerza de todas las marcas, entre ellas:",
+    "items": [
+      "Life Fitness",
+      "Precor",
+      "Matrix",
+      "Technogym",
+      "Star Trac",
+      "Cybex",
+      "Hammer Strength",
+      "Nautilus",
+      "Johnson",
+      "BH Fitness",
+      "SportsArt",
+      "Hoist",
+      "Body-Solid",
+      "Bowflex"
+    ],
+    "disclaimer": "Las marcas mencionadas son propiedad de sus respectivos titulares y se usan solo para indicar los equipos que atendemos. Polein es un servicio técnico independiente; no es distribuidor ni centro de servicio autorizado de dichas marcas."
+  },
+  "Process": {
+    "title": "CÓMO TRABAJAMOS",
+    "subtitle": "Un proceso claro, de la primera llamada al reporte final.",
+    "steps": [
+      {
+        "icon": "fa fa-whatsapp",
+        "title": "Contáctenos",
+        "text": "Escríbanos por WhatsApp, llámenos o llene el formulario. Cuéntenos qué equipo tiene y qué necesita."
+      },
+      {
+        "icon": "fa fa-search",
+        "title": "Diagnóstico",
+        "text": "Revisamos su equipo en sitio e identificamos la falla o el mantenimiento que requiere."
+      },
+      {
+        "icon": "fa fa-file-text-o",
+        "title": "Cotización",
+        "text": "Le enviamos una cotización detallada antes de realizar cualquier trabajo. Sin sorpresas."
+      },
+      {
+        "icon": "fa fa-check-circle",
+        "title": "Servicio y reporte",
+        "text": "Realizamos el servicio y le entregamos un reporte digital con el trabajo realizado y el historial de su equipo."
+      }
+    ],
+    "cta": "Cotiza por WhatsApp"
+  },
+  "Labels": {
+    "nav": {
+      "about": "¿QUIÉNES SOMOS?",
+      "features": "NOS DISTINGUE",
+      "services": "SERVICIOS",
+      "tracking": "CONTROL INTELIGENTE",
+      "clients": "CLIENTES",
+      "gallery": "GALERÍA",
+      "testimonials": "TESTIMONIOS",
+      "faq": "FAQ",
+      "contact": "CONTÁCTANOS",
+      "toggle": "Abrir menú",
+      "logoAlt": "Polein"
+    },
+    "about": {
+      "title": "¿QUIÉNES SOMOS?",
+      "whyTitle": "¿POR QUÉ ELEGIRNOS?",
+      "imageAlt": "Técnico de Polein: mantenimiento y reparación de calidad para equipos de gimnasio"
+    },
+    "features": {
+      "title": "LO QUE NOS DISTINGUE"
+    },
+    "services": {
+      "title": "NUESTROS SERVICIOS"
+    },
+    "clients": {
+      "title": "NUESTROS CLIENTES"
+    },
+    "gallery": {
+      "title": "GALERÍA",
+      "subtitle": "Experiencia en todas las marcas y modelos de equipos fitness",
+      "imageAlt": "Trabajo realizado por Polein"
+    },
+    "testimonials": {
+      "title": "TESTIMONIOS"
+    },
+    "carousel": {
+      "prev": "Anterior",
+      "next": "Siguiente"
+    },
+    "floating": {
+      "call": "Llamar a Polein",
+      "whatsapp": "Contáctanos por WhatsApp"
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "intro": "Complete el formulario y le responderemos a la brevedad por teléfono, WhatsApp o correo electrónico.",
+      "fields": {
+        "name": "Nombre",
+        "phone": "Teléfono",
+        "email": "Correo electrónico (opcional)",
+        "serviceType": "Tipo de servicio",
+        "serviceTypePlaceholder": "Tipo de servicio (opcional)",
+        "serviceTypeOther": "Otro",
+        "equipment": "Equipo",
+        "equipmentPlaceholder": "Equipo: marca y modelo (opcional)",
+        "message": "Mensaje"
+      },
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "success": "Gracias por contactarnos. Hemos recibido su mensaje y en breve nos comunicaremos con usted.",
+      "error": "Hubo un error al enviar el mensaje. Inténtelo nuevamente o escríbanos por WhatsApp.",
+      "infoTitle": "Datos de Contacto",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "hours": "Horario",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "footer": {
+      "company": "POLEINMAN, S.A.S. de C.V.",
+      "rights": "Todos los derechos reservados."
+    }
   }
 }

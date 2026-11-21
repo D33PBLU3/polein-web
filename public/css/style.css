@@ -1255,3 +1255,136 @@ label {
   color: #fff;
   text-decoration: underline;
 }
+/* Brands Section (names as text, no logos) */
+#brands {
+  padding: 80px 0;
+  background: #f6f6f6;
+}
+#brands .section-title {
+  margin-bottom: 40px;
+}
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+.brand-list li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #00263a;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 25px;
+  padding: 10px 22px;
+}
+.brand-disclaimer {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #999;
+}
+/* Process Section ("Cómo trabajamos") */
+#process {
+  padding: 100px 0;
+  background: #fff;
+}
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 0 40px;
+  counter-reset: none;
+}
+.process-step {
+  position: relative;
+  flex: 1 1 220px;
+  max-width: 260px;
+  padding: 30px 20px 10px;
+}
+.process-num {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background: #00263a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.process-step i.fa {
+  display: block;
+  font-size: 40px;
+  color: #ff8200;
+  margin: 18px 0 16px;
+}
+.process-step h3 {
+  margin: 0 0 10px;
+}
+.process-step p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.process-cta,
+.process-cta:focus {
+  background: #25d366;
+  background-image: none;
+  border: 2px solid #25d366;
+}
+.process-cta:hover {
+  background: #1ebe5d;
+  border-color: #1ebe5d;
+}
+.process-cta .fa {
+  font-size: 20px;
+  margin-right: 6px;
+}
+@media (max-width: 767px) {
+  #brands,
+  #process {
+    padding: 60px 0;
+  }
+  .brand-list li {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .process-step {
+    max-width: none;
+  }
+  .process-cta {
+    width: 100%;
+    white-space: normal;
+  }
+}
+/* Contact form: select placeholder color + clickable contact details */
+#contact select.form-control {
+  height: 34px;
+}
+#contact select.form-control.is-placeholder {
+  color: #777;
+}
+#contact .contact-item a {
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact .contact-item a:hover {
+  color: #fff;
+}
+/* Footer */
+#footer .footer-nap {
+  margin-bottom: 6px;
+}
+#footer .footer-nap strong {
+  color: #00263a;
+}
+#footer .footer-legal {
+  font-size: 13px;
+  margin: 6px 0 0;
+}

@@ -35,7 +35,7 @@ const PrivacyPolicy = (props) => {
   const data = props.data;
   return (
     <div>
-      <Navigation />
+      <Navigation labels={props.navLabels} />
       <div className="privacy-page">
         {data ? (
           <div className="privacy-container">
@@ -54,7 +54,7 @@ const PrivacyPolicy = (props) => {
           "loading"
         )}
       </div>
-      <Contact data={props.contact} privacy={data} />
+      <Contact {...props.contactProps} />
     </div>
   );
 };

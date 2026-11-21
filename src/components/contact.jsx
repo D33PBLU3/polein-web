@@ -9,45 +9,64 @@ const initialState = {
   name: "",
   phone: "",
   email: "",
+  service_type: "",
+  equipment: "",
   message: "",
 };
+
+const telHref = (phone) => `tel:${phone.replace(/\s/g, "")}`;
+
 export const Contact = (props) => {
-  const [{ name, phone, email, message }, setState] = useState(initialState);
+  const [form, setState] = useState(initialState);
   const location = useLocation();
   const isRootPage = location.pathname === "/";
+  const data = props.data || {};
+  const L = props.labels || {};
+  const F = L.fields || {};
+  const services = props.services || [];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [confirmationMessage, setConfirmationMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isSubmitting) return;
     setIsSubmitting(true);
-    setConfirmationMessage('');
+    setConfirmationMessage("");
+    // Service type and equipment are also prepended to the message, so they
+    // show in the email even if the EmailJS template doesn't use
+    // {{service_type}} / {{equipment}}.
+    const details = [
+      form.service_type && `${F.serviceType}: ${form.service_type}`,
+      form.equipment && `${F.equipment}: ${form.equipment}`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const params = {
+      ...form,
+      message: details ? `${details}\n\n${form.message}` : form.message,
+    };
     emailjs
-      .sendForm(
-        "service_polein",
-        "template_tz9ijtt",
-        e.target,
-        "Gb2jANzOJTCSPTPSj"
-      )
+      .send("service_polein", "template_tz9ijtt", params, "Gb2jANzOJTCSPTPSj")
       .then(
         () => {
           trackEvent("generate_lead", { location: "contact_form" });
-          setConfirmationMessage('Gracias por contactarnos. Hemos recibido su mensaje y en breve nos comunicaremos con usted.');
+          setConfirmationMessage(L.success);
           clearState();
           setIsSubmitting(false);
         },
         () => {
-          setConfirmationMessage('Hubo un error al enviar el correo. Inténtalo nuevamente.');
+          setConfirmationMessage(L.error);
           setIsSubmitting(false);
         }
       );
   };
+
   return (
     <div>
       <div id="contact">
@@ -55,10 +74,8 @@ export const Contact = (props) => {
           <div className="col-xs-12 col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Contáctanos</h2>
-                <p>
-                  Le invitamos a completar el siguiente formulario para enviarnos un correo electrónico; con gusto le daremos respuesta a la brevedad.
-                </p>
+                <h2>{L.title}</h2>
+                <p>{L.intro}</p>
               </div>
               <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
@@ -69,13 +86,13 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Nombre"
+                        placeholder={F.name}
+                        aria-label={F.name}
                         required
                         autoComplete="name"
-                        value={name}
+                        value={form.name}
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-xs-12 col-md-6">
@@ -85,14 +102,14 @@ export const Contact = (props) => {
                         id="phone"
                         name="phone"
                         className="form-control"
-                        placeholder="Teléfono"
+                        placeholder={F.phone}
+                        aria-label={F.phone}
                         required
                         inputMode="tel"
                         autoComplete="tel"
-                        value={phone}
+                        value={form.phone}
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-xs-12 col-md-6">
@@ -102,14 +119,47 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Correo electrónico"
-                        required
+                        placeholder={F.email}
+                        aria-label={F.email}
                         inputMode="email"
                         autoComplete="email"
-                        value={email}
+                        value={form.email}
                         onChange={handleChange}
                       />
-                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-xs-12 col-md-6">
+                    <div className="form-group">
+                      <select
+                        id="service_type"
+                        name="service_type"
+                        className={`form-control${form.service_type ? "" : " is-placeholder"}`}
+                        aria-label={F.serviceType}
+                        value={form.service_type}
+                        onChange={handleChange}
+                      >
+                        <option value="">{F.serviceTypePlaceholder}</option>
+                        {services.map((s) => (
+                          <option key={s.name} value={s.name}>
+                            {s.name}
+                          </option>
+                        ))}
+                        <option value={F.serviceTypeOther}>{F.serviceTypeOther}</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-xs-12">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="equipment"
+                        name="equipment"
+                        className="form-control"
+                        placeholder={F.equipmentPlaceholder}
+                        aria-label={F.equipment}
+                        value={form.equipment}
+                        onChange={handleChange}
+                      />
                     </div>
                   </div>
                 </div>
@@ -119,14 +169,13 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Mensaje"
+                    placeholder={F.message}
+                    aria-label={F.message}
                     required
-                    value={message}
+                    value={form.message}
                     onChange={handleChange}
                   ></textarea>
-                  <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
                 {confirmationMessage && (
                   <p className="confirmation-message" role="status" aria-live="polite">
                     {confirmationMessage}
@@ -143,52 +192,74 @@ export const Contact = (props) => {
                   className="btn btn-custom btn-lg"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+                  {isSubmitting ? L.submitting : L.submit}
                 </button>
               </form>
             </div>
           </div>
           <div className="col-xs-12 col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Datos de Contacto</h3>
+              <h3>{L.infoTitle}</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Dirección
+                  <i className="fa fa-map-marker"></i> {L.address}
                 </span>
-                {props.data ? props.data.address : "loading"}
+                {data.address}
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Teléfono
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                  <i className="fa fa-phone"></i> {L.phone}
+                </span>
+                {data.phone && <a href={telHref(data.phone)}>{data.phone}</a>}
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-envelope-o"></i> Correo electrónico
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                  <i className="fa fa-envelope-o"></i> {L.email}
+                </span>
+                {data.email && <a href={`mailto:${data.email}`}>{data.email}</a>}
               </p>
             </div>
+            {data.hours && (
+              <div className="contact-item">
+                <p>
+                  <span>
+                    <i className="fa fa-clock-o"></i> {L.hours}
+                  </span>
+                  {data.hours}
+                </p>
+              </div>
+            )}
           </div>
           <div className="col-xs-12 col-md-12">
             <div className="row">
               <div className="social">
                 <ul>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-whatsapp"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
+                  {/* Legacy keys: youtube = WhatsApp, twitter = Instagram */}
+                  {data.youtube && (
+                    <li>
+                      <a href={data.youtube} target="_blank" rel="noopener noreferrer" aria-label={L.whatsapp}>
+                        <i className="fa fa-whatsapp"></i>
+                      </a>
+                    </li>
+                  )}
+                  {data.facebook && (
+                    <li>
+                      <a href={data.facebook} target="_blank" rel="noopener noreferrer" aria-label={L.facebook}>
+                        <i className="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  )}
+                  {data.twitter && (
+                    <li>
+                      <a href={data.twitter} target="_blank" rel="noopener noreferrer" aria-label={L.instagram}>
+                        <i className="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>
@@ -197,11 +268,35 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            {isRootPage ? (
-              <Link to="/aviso-de-privacidad">{props.privacy ? props.privacy.linkLabel : ""}</Link>
-            ) : (
-              <></>
+          <p className="footer-nap">
+            <strong>Polein</strong>
+            {data.address && <> · {data.address}</>}
+            {data.phone && (
+              <>
+                {" · "}
+                <a href={telHref(data.phone)}>{data.phone}</a>
+              </>
+            )}
+            {data.email && (
+              <>
+                {" · "}
+                <a href={`mailto:${data.email}`}>{data.email}</a>
+              </>
+            )}
+          </p>
+          {data.hours && (
+            <p>
+              {L.hours}: {data.hours}
+            </p>
+          )}
+          <p className="footer-legal">
+            © {new Date().getFullYear()} {props.footer ? props.footer.company : ""}{" "}
+            {props.footer ? props.footer.rights : ""}
+            {isRootPage && props.privacy && (
+              <>
+                {" · "}
+                <Link to="/aviso-de-privacidad">{props.privacy.linkLabel}</Link>
+              </>
             )}
           </p>
         </div>

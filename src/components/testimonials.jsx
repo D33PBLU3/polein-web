@@ -37,7 +37,7 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2>TESTIMONIOS</h2>
+          <h2>{props.labels ? props.labels.title : ""}</h2>
         </div>
         {count > 0 && (
           <div className="tc-wrapper">
@@ -55,10 +55,10 @@ export const Testimonials = (props) => {
               ))}
             </div>
 
-            <button className="tc-btn tc-btn-left" onClick={() => handleNav(-1)} aria-label="Anterior">
+            <button className="tc-btn tc-btn-left" onClick={() => handleNav(-1)} aria-label={props.carousel ? props.carousel.prev : ""}>
               <i className="fa fa-chevron-left"></i>
             </button>
-            <button className="tc-btn tc-btn-right" onClick={() => handleNav(1)} aria-label="Siguiente">
+            <button className="tc-btn tc-btn-right" onClick={() => handleNav(1)} aria-label={props.carousel ? props.carousel.next : ""}>
               <i className="fa fa-chevron-right"></i>
             </button>
 

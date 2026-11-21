@@ -30,7 +30,15 @@ git push origin main    # deploys: GitHub Actions builds and publishes to GitHub
 
 - **Tracking IDs live in `src/config/tracking.js`** (GA4, Google Ads, Meta Pixel). An empty ID = that platform never loads. `src/utils/analytics.js` uses one document-level click listener that auto-tracks every `wa.me` link (`whatsapp_click`) and `tel:` link (`call_click`); the contact form fires `generate_lead` on success. New WhatsApp/phone links need no extra tracking code.
 
+- **UI labels live in `data.Labels`** (nav, section titles, form fields/messages, aria-labels, footer) — passed to components as a `labels` prop because some sections' `data` is an array with no room for a title. Add new UI strings there, not in JSX.
+
+- **Business info is duplicated in `public/index.html`** (Open Graph tags + LocalBusiness JSON-LD for Google/WhatsApp previews, which can't read React state). When phone, email, hours, socials or services change in `data.json`, update `index.html` too. Share image: `public/img/og-image.jpg` (1200×630).
+
+- **`Brands` lists brand names as text only** — no logos (would need each brand owner's permission); keep the disclaimer.
+
 - **Privacy notice (Aviso de Privacidad, Mexican LFPDPPP)** lives in `data.Privacy` and renders at `/aviso-de-privacidad` (`PrivacyPolicy.jsx`; `/terms-and-conditions` redirects there). In `sections[].content`, a string is a paragraph and an array is a bullet list; URLs and emails are auto-linked. Update `lastUpdated` and the cookies/providers sections whenever tracking tools or form providers change. The contact form shows `Privacy.formNotice` + link above the submit button.
+
+- **`public/sitemap.xml` lists only `/`.** Sub-routes are served through `404.html` with HTTP 404, so Google won't index them — don't add them to the sitemap. SEO landing pages would need real prerendered HTML files per route.
 
 - **Direct visits to sub-routes work via `build/404.html`** — the `postbuild` script copies `index.html` to `404.html`, so GitHub Pages serves the React app for unknown paths (with HTTP status 404).
 

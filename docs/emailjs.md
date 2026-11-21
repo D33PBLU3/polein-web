@@ -13,19 +13,23 @@ The contact form at `#contact` sends email via the EmailJS client-side SDK witho
 
 ## Form fields sent to EmailJS
 
-The form element is passed directly to `emailjs.sendForm()`, so all `name` attributes on inputs map to template variables:
+`contact.jsx` calls `emailjs.send()` with these template params:
 
 | HTML `name` | Template variable | Type |
 |---|---|---|
 | `name` | `{{name}}` | text |
 | `phone` | `{{phone}}` | tel |
-| `email` | `{{email}}` | email |
-| `message` | `{{message}}` | textarea |
+| `email` | `{{email}}` | email (**optional**, may be empty) |
+| `service_type` | `{{service_type}}` | select (optional; options = `Services[].name` + "Otro") |
+| `equipment` | `{{equipment}}` | text (optional, brand/model) |
+| `message` | `{{message}}` | textarea — service type and equipment are **prepended** to it, so they reach the inbox even if the template doesn't use `{{service_type}}` / `{{equipment}}` |
+
+If the template sets Reply-To to `{{email}}`, it will be empty for visitors who skip the email field — reply by phone/WhatsApp in that case.
 
 ## UX behavior
 
-- On success: `confirmationMessage` state is set to "Correo enviado, nosotros nos pondremos en contacto contigo" (orange bold text below the button); form fields reset to empty
-- On failure: message set to "Hubo un error al enviar el correo. Inténtalo nuevamente."
+- On success: `Labels.contact.success` is shown (orange bold text above the button) and fields reset; a `generate_lead` analytics event fires
+- On failure: `Labels.contact.error` is shown. All form text lives in `Labels.contact` in `data.json`
 - The confirmation message is never auto-dismissed; it persists until the user reloads
 
 ## Changing the template or service
@@ -33,7 +37,7 @@ The form element is passed directly to `emailjs.sendForm()`, so all `name` attri
 1. Log in to the EmailJS dashboard (account associated with poleinman@gmail.com)
 2. Update the Service, Template, or Public Key there
 3. Update the corresponding hardcoded values in `src/components/contact.jsx:33-38`
-4. Redeploy with `npm run deploy`
+4. Commit and push to `main` (GitHub Actions deploys)
 
 ## Domain whitelisting
 

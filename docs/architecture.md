@@ -11,6 +11,8 @@ App.jsx
 │   │   ├── <Features />            ← 4 icon cards (data.Features[])
 │   │   ├── <About />               ← description + two bullet lists (Why/Why2)
 │   │   ├── <Services />            ← 6 service tiles (data.Services[])
+│   │   ├── <Brands />              ← brand names as text + disclaimer (data.Brands)
+│   │   ├── <Process />             ← "Cómo trabajamos" 4 steps + WhatsApp CTA (data.Process)
 │   │   ├── <Gallery />             ← grid of <Image /> components (data.Gallery[])
 │   │   │   └── <Image />           ← individual portfolio item with lightbox link
 │   │   ├── <Testimonials />        ← client quotes (data.Testimonials[])

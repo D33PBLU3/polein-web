@@ -11,6 +11,8 @@ import { Faq } from "./components/faq";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Contact } from "./components/contact";
+import { Brands } from "./components/brands";
+import { Process } from "./components/process";
 import { Stats } from "./components/stats";
 import { WhatsAppButton } from "./components/whatsappbutton";
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -32,35 +34,48 @@ const App = () => {
   }, []);
 
 
+  const L = landingPageData.Labels || {};
+  const whatsapp = landingPageData.Contact ? landingPageData.Contact.youtube : "";
+  const contactProps = {
+    data: landingPageData.Contact,
+    labels: L.contact,
+    footer: L.footer,
+    privacy: landingPageData.Privacy,
+    services: landingPageData.Services,
+  };
+
   return (
     <Router>
       <div>
         <Routes>
           <Route path="/" element={
             <>
-              <Navigation data={landingPageData.Contact} />
+              <Navigation labels={L.nav} />
               <Header data={landingPageData.Header} contact={landingPageData.Contact} />
               <Stats data={landingPageData.Stats} />
-              <About data={landingPageData.About} />
-              <Features data={landingPageData.Features} />
-              <Services data={landingPageData.Services} />
+              <About data={landingPageData.About} labels={L.about} />
+              <Features data={landingPageData.Features} labels={L.features} />
+              <Services data={landingPageData.Services} labels={L.services} />
+              <Brands data={landingPageData.Brands} />
+              <Process data={landingPageData.Process} whatsapp={whatsapp} />
               <Tracking data={landingPageData.Tracking} />
-              <Clients data={landingPageData.Clients} />
-              <Gallery data={landingPageData.Gallery} />
-              <Testimonials data={landingPageData.Testimonials} />
+              <Clients data={landingPageData.Clients} labels={L.clients} />
+              <Gallery data={landingPageData.Gallery} labels={L.gallery} carousel={L.carousel} />
+              <Testimonials data={landingPageData.Testimonials} labels={L.testimonials} carousel={L.carousel} />
               <Faq data={landingPageData.Faq} />
-              <Contact data={landingPageData.Contact} privacy={landingPageData.Privacy} />
+              <Contact {...contactProps} />
             </>
           } />
           <Route path="/aviso-de-privacidad" element={
-            <PrivacyPolicy data={landingPageData.Privacy} contact={landingPageData.Contact} />
+            <PrivacyPolicy data={landingPageData.Privacy} navLabels={L.nav} contactProps={contactProps} />
           } />
           {/* old URL, kept so existing links still work */}
           <Route path="/terms-and-conditions" element={<Navigate to="/aviso-de-privacidad" replace />} />
         </Routes>
         <WhatsAppButton
-          link={landingPageData.Contact ? landingPageData.Contact.youtube : ""}
+          link={whatsapp}
           phone={landingPageData.Contact ? landingPageData.Contact.phone : ""}
+          labels={L.floating}
         />
       </div>
     </Router>

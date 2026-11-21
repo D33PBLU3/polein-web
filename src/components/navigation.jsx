@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 export const Navigation = (props) => {
   const location = useLocation();
   const isRootPage = location.pathname === '/';
+  const L = props.labels || {};
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -15,13 +16,13 @@ export const Navigation = (props) => {
             data-target="#bs-example-navbar-collapse-1"
           >
             {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
+            <span className="sr-only">{L.toggle}</span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="img/logo/logo2.jpg" alt="Polein" className="nav-logo" />
+            <img src="img/logo/logo2.jpg" alt={L.logoAlt} className="nav-logo" />
           </a>{" "}
         </div>
 
@@ -32,47 +33,47 @@ export const Navigation = (props) => {
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href={isRootPage ? "#about" : "/#about"} className="page-scroll">
-                ¿QUIÉNES SOMOS?
+                {L.about}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#features" : "/#features"} className="page-scroll">
-                NOS DISTINGUE
+                {L.features}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#services" : "/#services"} className="page-scroll">
-                SERVICIOS
+                {L.services}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#tracking" : "/#tracking"} className="page-scroll">
-                CONTROL INTELIGENTE
+                {L.tracking}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#clients" : "/#clients"} className="page-scroll">
-                CLIENTES
+                {L.clients}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#portfolio" : "/#portfolio"} className="page-scroll">
-                GALERÍA
+                {L.gallery}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#testimonials" : "/#testimonials"} className="page-scroll">
-                TESTIMONIOS
+                {L.testimonials}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#faq" : "/#faq"} className="page-scroll">
-                FAQ
+                {L.faq}
               </a>
             </li>
             <li>
               <a href={isRootPage ? "#contact" : "/#contact"} className="page-scroll">
-                CONTÁCTANOS
+                {L.contact}
               </a>
             </li>
           </ul>

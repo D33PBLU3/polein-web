@@ -5,7 +5,7 @@ export const Clients = (props) => {
     <div id="clients" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>NUESTROS CLIENTES</h2>
+          <h2>{props.labels ? props.labels.title : ""}</h2>
           <p>{props.data ? props.data.subtitle : "loading"}</p>
         </div>
         <div className="row">
