@@ -7,4 +7,4 @@ DO:
 
 AVOID:
 - Using bare `<a href="/some-path">` for internal routes — gh-pages serves from a subdirectory in dev but the homepage is set, so React Router handles all routing
-- Adding `<Navigation />` to sub-routes (e.g., TermsAndConditions) without also handling the anchor-link logic — the nav is currently only rendered on `/`
+- Adding `<Navigation />` to sub-routes (e.g., PrivacyPolicy) without also handling the anchor-link logic — the nav is currently only rendered on `/`

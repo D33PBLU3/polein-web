@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
@@ -13,7 +13,7 @@ import { Testimonials } from "./components/testimonials";
 import { Contact } from "./components/contact";
 import { Stats } from "./components/stats";
 import { WhatsAppButton } from "./components/whatsappbutton";
-import TermsAndConditions from './components/TermsAndConditions';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import JsonData from "./data/data.json";
 import { initTracking } from "./utils/analytics";
 import SmoothScroll from "smooth-scroll";
@@ -49,10 +49,14 @@ const App = () => {
               <Gallery data={landingPageData.Gallery} />
               <Testimonials data={landingPageData.Testimonials} />
               <Faq data={landingPageData.Faq} />
-              <Contact data={landingPageData.Contact} />
+              <Contact data={landingPageData.Contact} privacy={landingPageData.Privacy} />
             </>
           } />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/aviso-de-privacidad" element={
+            <PrivacyPolicy data={landingPageData.Privacy} contact={landingPageData.Contact} />
+          } />
+          {/* old URL, kept so existing links still work */}
+          <Route path="/terms-and-conditions" element={<Navigate to="/aviso-de-privacidad" replace />} />
         </Routes>
         <WhatsAppButton
           link={landingPageData.Contact ? landingPageData.Contact.youtube : ""}

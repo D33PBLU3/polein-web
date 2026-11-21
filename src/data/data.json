@@ -229,5 +229,124 @@
       "title": "Control Inteligente",
       "text": "Seguimiento en tiempo real con QR por equipo, historial de servicios y alertas de mantenimiento."
     }
-  ]
+  ],
+  "Privacy": {
+    "linkLabel": "Aviso de Privacidad",
+    "formNotice": "Al enviar este formulario, usted acepta el tratamiento de sus datos conforme a nuestro",
+    "title": "Aviso de Privacidad",
+    "lastUpdated": "Última actualización: 21 de noviembre de 2026",
+    "sections": [
+      {
+        "title": "1. Identidad y domicilio del responsable",
+        "content": [
+          "POLEINMAN, S.A.S. de C.V. (en adelante, “Polein”), con domicilio en Paseo del Alva 1192, Int. 4, Col. Valle Imperial, Zapopan, Jalisco, C.P. 45134, México, es responsable del tratamiento de los datos personales que usted nos proporcione a través del sitio web polein.com.mx (el “Sitio”), de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares."
+        ]
+      },
+      {
+        "title": "2. Datos personales que recabamos",
+        "content": [
+          "Recabamos los siguientes datos personales:",
+          [
+            "Cuando llena el formulario de contacto: nombre, teléfono, correo electrónico y la información que incluya en su mensaje.",
+            "Cuando nos contacta por WhatsApp o por teléfono: su número telefónico y la información que comparta en la conversación.",
+            "De forma automática al navegar el Sitio: dirección IP, tipo de navegador y dispositivo, ubicación aproximada, páginas visitadas y los botones de contacto en los que hace clic (ver sección 5)."
+          ],
+          "No recabamos datos personales sensibles. Le pedimos no incluirlos en su mensaje."
+        ]
+      },
+      {
+        "title": "3. Finalidades del tratamiento",
+        "content": [
+          "Sus datos personales se utilizarán para las siguientes finalidades, necesarias para atender su solicitud (finalidades primarias):",
+          [
+            "Responder sus solicitudes de información y cotización.",
+            "Contactarle para dar seguimiento a su solicitud y agendar visitas de servicio.",
+            "Dar seguimiento a la relación comercial que, en su caso, se establezca."
+          ],
+          "Adicionalmente, podremos utilizar sus datos para las siguientes finalidades que no son necesarias para el servicio solicitado (finalidades secundarias):",
+          [
+            "Enviarle información promocional, ofertas y novedades sobre nuestros servicios por correo electrónico o WhatsApp.",
+            "Elaborar estadísticas sobre el uso del Sitio y medir la eficacia de nuestra publicidad."
+          ],
+          "Si no desea que sus datos se utilicen para las finalidades secundarias, puede indicarlo en cualquier momento enviando un correo a poleinman@gmail.com con el asunto “Finalidades secundarias”. Su negativa no será motivo para negarle los servicios que solicite."
+        ]
+      },
+      {
+        "title": "4. Transferencias y proveedores",
+        "content": [
+          "Polein no vende, renta ni transfiere sus datos personales a terceros.",
+          "Para operar el Sitio utilizamos proveedores que tratan datos por cuenta nuestra, únicamente para prestarnos sus servicios y bajo sus propias medidas de seguridad. Algunos se ubican fuera de México:",
+          [
+            "EmailJS: envío por correo electrónico de los mensajes del formulario de contacto.",
+            "Google (Gmail y Google Analytics): recepción de correos y estadísticas de uso del Sitio.",
+            "Meta (WhatsApp): mensajería, cuando usted decide contactarnos por ese medio."
+          ],
+          "Sus datos podrán ser compartidos con autoridades competentes únicamente cuando exista un requerimiento legal."
+        ]
+      },
+      {
+        "title": "5. Uso de cookies y tecnologías de rastreo",
+        "content": [
+          "El Sitio utiliza cookies y tecnologías similares de Google Analytics para conocer el número de visitas, las páginas consultadas, el origen de las visitas, el tipo de dispositivo, la ubicación aproximada y los clics en los botones de contacto (WhatsApp, llamada y formulario). Esta información se utiliza de forma estadística.",
+          "Podremos utilizar también herramientas de publicidad, como Google Ads y el Píxel de Meta, para medir la eficacia de nuestros anuncios.",
+          "Usted puede deshabilitar estas tecnologías:",
+          [
+            "Desde la configuración de cookies de su navegador.",
+            "Instalando el complemento de inhabilitación de Google Analytics: https://tools.google.com/dlpage/gaoptout",
+            "Desde la configuración de anuncios de Google: https://adssettings.google.com"
+          ]
+        ]
+      },
+      {
+        "title": "6. Derechos ARCO",
+        "content": [
+          "Usted tiene derecho a conocer qué datos personales tenemos y para qué los utilizamos (Acceso); a solicitar su corrección cuando sean inexactos o incompletos (Rectificación); a que los eliminemos de nuestros registros (Cancelación); y a oponerse a su uso para fines específicos (Oposición).",
+          "Para ejercer cualquiera de estos derechos, envíe una solicitud al Departamento de Privacidad al correo poleinman@gmail.com, que contenga:",
+          [
+            "Su nombre y el medio para comunicarle la respuesta.",
+            "Documento que acredite su identidad o, en su caso, la representación legal de quien actúe en su nombre.",
+            "La descripción clara de los datos personales y del derecho que desea ejercer.",
+            "Cualquier elemento que facilite la localización de sus datos y, en caso de rectificación, las modificaciones a realizar y la documentación que las sustente."
+          ],
+          "Le responderemos en un plazo máximo de 20 días hábiles contados a partir de la recepción de su solicitud. Si resulta procedente, se hará efectiva dentro de los 15 días hábiles siguientes. El ejercicio de estos derechos es gratuito."
+        ]
+      },
+      {
+        "title": "7. Revocación del consentimiento",
+        "content": [
+          "Usted puede revocar en cualquier momento el consentimiento que nos haya otorgado para el tratamiento de sus datos personales, enviando su solicitud a poleinman@gmail.com con los mismos requisitos de la sección 6. Es posible que no podamos atender su solicitud de inmediato o en su totalidad cuando exista una obligación legal que requiera seguir tratando sus datos."
+        ]
+      },
+      {
+        "title": "8. Opciones para limitar el uso o divulgación de sus datos",
+        "content": [
+          "Además de los medios descritos en las secciones 3, 5 y 6, puede solicitarnos en cualquier momento dejar de recibir comunicaciones promocionales escribiendo a poleinman@gmail.com. También puede inscribirse en el Registro Público para Evitar Publicidad (REPEP) de la PROFECO: https://repep.profeco.gob.mx"
+        ]
+      },
+      {
+        "title": "9. Conservación de los datos",
+        "content": [
+          "Conservaremos sus datos personales mientras dure la relación comercial y hasta 5 años después de su terminación, para cumplir con obligaciones legales y atender posibles aclaraciones. Concluido ese plazo, serán eliminados de forma segura."
+        ]
+      },
+      {
+        "title": "10. Medidas de seguridad",
+        "content": [
+          "Aplicamos medidas de seguridad administrativas, técnicas y físicas razonables para proteger sus datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado."
+        ]
+      },
+      {
+        "title": "11. Cambios al aviso de privacidad",
+        "content": [
+          "Este aviso de privacidad puede modificarse para atender cambios legales, en nuestros servicios o en nuestras prácticas de privacidad. Cualquier cambio se publicará en esta página, indicando la fecha de la última actualización."
+        ]
+      },
+      {
+        "title": "12. Autoridad competente",
+        "content": [
+          "Si considera que su derecho a la protección de datos personales ha sido vulnerado, puede acudir ante la autoridad competente en la materia, actualmente la Secretaría Anticorrupción y Buen Gobierno."
+        ]
+      }
+    ]
+  }
 }

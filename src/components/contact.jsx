@@ -132,6 +132,12 @@ export const Contact = (props) => {
                     {confirmationMessage}
                   </p>
                 )}
+                {props.privacy && (
+                  <p className="form-privacy-notice">
+                    {props.privacy.formNotice}{" "}
+                    <Link to="/aviso-de-privacidad">{props.privacy.linkLabel}</Link>.
+                  </p>
+                )}
                 <button
                   type="submit"
                   className="btn btn-custom btn-lg"
@@ -193,7 +199,7 @@ export const Contact = (props) => {
         <div className="container text-center">
           <p>
             {isRootPage ? (
-              <Link to="/terms-and-conditions">Política de Privacidad</Link>
+              <Link to="/aviso-de-privacidad">{props.privacy ? props.privacy.linkLabel : ""}</Link>
             ) : (
               <></>
             )}

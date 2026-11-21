@@ -15,8 +15,9 @@ App.jsx
 │   │   │   └── <Image />           ← individual portfolio item with lightbox link
 │   │   ├── <Testimonials />        ← client quotes (data.Testimonials[])
 │   │   └── <Contact />             ← EmailJS form + contact info + social links + footer
-│   └── Route "/terms-and-conditions"
-│       └── <TermsAndConditions />  ← standalone legal page, no nav
+│   ├── Route "/aviso-de-privacidad"
+│   │   └── <PrivacyPolicy />       ← Aviso de Privacidad (data.Privacy), with nav + contact
+│   └── Route "/terms-and-conditions" → redirects to "/aviso-de-privacidad"
 ```
 
 ## Data Flow
@@ -48,7 +49,7 @@ Components guard against `undefined` with `props.data ? props.data.field : "load
 5. On failure: Spanish error message shown
 
 **Anchor navigation (cross-page):**
-1. User on `/terms-and-conditions` clicks a nav link (e.g. "SERVICIOS")
+1. User on `/aviso-de-privacidad` clicks a nav link (e.g. "SERVICIOS")
 2. `navigation.jsx` emits `href="/#services"` (not `#services`) because `isRootPage === false`
 3. Browser navigates to `/`, React Router renders the home page, browser scrolls to `#services`
 4. `smooth-scroll` library handles animation via its selector `a[href*="#"]` initialized in `App.jsx`

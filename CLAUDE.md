@@ -30,6 +30,10 @@ git push origin main    # deploys: GitHub Actions builds and publishes to GitHub
 
 - **Tracking IDs live in `src/config/tracking.js`** (GA4, Google Ads, Meta Pixel). An empty ID = that platform never loads. `src/utils/analytics.js` uses one document-level click listener that auto-tracks every `wa.me` link (`whatsapp_click`) and `tel:` link (`call_click`); the contact form fires `generate_lead` on success. New WhatsApp/phone links need no extra tracking code.
 
+- **Privacy notice (Aviso de Privacidad, Mexican LFPDPPP)** lives in `data.Privacy` and renders at `/aviso-de-privacidad` (`PrivacyPolicy.jsx`; `/terms-and-conditions` redirects there). In `sections[].content`, a string is a paragraph and an array is a bullet list; URLs and emails are auto-linked. Update `lastUpdated` and the cookies/providers sections whenever tracking tools or form providers change. The contact form shows `Privacy.formNotice` + link above the submit button.
+
+- **Direct visits to sub-routes work via `build/404.html`** — the `postbuild` script copies `index.html` to `404.html`, so GitHub Pages serves the React app for unknown paths (with HTTP status 404).
+
 - **`public/css/style.css` uses CRLF line endings** — preserve them when editing with scripts, or the whole file shows as changed.
 
 - **`Team` data has placeholder names** (John Doe, etc.) — the section is rendered but the names/photos have not been updated with real data.
