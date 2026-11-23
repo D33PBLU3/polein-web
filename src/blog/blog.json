@@ -1,0 +1,38 @@
+{
+  "index": {
+    "title": "Blog de mantenimiento de equipos de gimnasio",
+    "metaTitle": "Blog: mantenimiento de caminadoras, elípticas y equipo de gimnasio | Polein",
+    "description": "Guías prácticas de Polein para el mantenimiento y reparación de caminadoras, elípticas y equipo de gimnasio: frecuencias, fallas comunes y consejos de nuestros técnicos en Guadalajara.",
+    "intro": "Consejos de nuestros técnicos, basados en cientos de servicios a gimnasios, hoteles, condominios y casas en Guadalajara."
+  },
+  "labels": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "toggle": "Abrir menú",
+    "readMore": "Leer guía",
+    "minutes": "min de lectura",
+    "updated": "Actualizado",
+    "author": "Equipo técnico Polein",
+    "faqTitle": "Preguntas frecuentes",
+    "relatedTitle": "Siga leyendo",
+    "ctaTitle": "Agenda tu mantenimiento",
+    "ctaText": "Atendemos caminadoras, elípticas, bicicletas y equipo de fuerza de todas las marcas en la zona metropolitana de Guadalajara. Escríbanos por WhatsApp y le asignamos fecha a su conveniencia.",
+    "ctaWhatsapp": "Agenda por WhatsApp",
+    "inlineTitle": "Agenda tu mantenimiento",
+    "inlineText": "¿Prefiere que lo haga un técnico? Le respondemos por WhatsApp y coordinamos la visita.",
+    "inlineButton": "Agendar por WhatsApp",
+    "agendaMessage": "Hola, quiero agendar un mantenimiento. Vi su guía \"{title}\".",
+    "ctaCall": "Llamar",
+    "whatsappMessage": "Hola, vi su guía \"{title}\" y quiero cotizar un servicio.",
+    "floatCall": "Llamar a Polein",
+    "floatWhatsapp": "Contáctanos por WhatsApp",
+    "privacy": "Aviso de Privacidad"
+  },
+  "teaser": {
+    "title": "GUÍAS DE MANTENIMIENTO",
+    "subtitle": "Consejos de nuestros técnicos para que sus equipos duren más.",
+    "all": "Ver todas las guías"
+  }
+}

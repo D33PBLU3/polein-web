@@ -1,0 +1,316 @@
+[
+  {
+    "slug": "mantenimiento-preventivo-caminadora",
+    "title": "Mantenimiento preventivo de caminadora: qué incluye y cada cuánto hacerlo",
+    "description": "Qué incluye el mantenimiento preventivo de una caminadora, cada cuánto hacerlo en casa o gimnasio y señales de que ya lo necesita. Guía de Polein, Guadalajara.",
+    "excerpt": "Limpieza, lubricación de banda y tabla, ajuste y centrado, revisión del motor y la electrónica: esto es lo que hacemos en cada visita y la frecuencia que recomendamos según el uso.",
+    "category": "Caminadoras",
+    "icon": "fa fa-wrench",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 7,
+    "featured": true,
+    "related": [
+      "lubricar-banda-caminadora",
+      "fallas-comunes-caminadora",
+      "revision-mantenimiento-o-reparacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una caminadora?",
+        "a": "En gimnasios y hoteles con uso diario recomendamos un mantenimiento preventivo cada 1 a 3 meses; en la mayoría de los gimnasios que atendemos el intervalo es de 2 meses. En casa, con uso de 3 a 5 veces por semana, cada 6 meses es suficiente; con uso ligero, una vez al año."
+      },
+      {
+        "q": "¿Cuánto tarda el mantenimiento de una caminadora?",
+        "a": "Un mantenimiento preventivo normal toma alrededor de una hora por equipo. Si durante la revisión aparece una pieza dañada, se le informa al cliente y se cotiza el cambio por separado."
+      },
+      {
+        "q": "¿Dan mantenimiento a caminadoras de cualquier marca?",
+        "a": "Sí. Atendemos Life Fitness, Precor, Matrix, Technogym, Cybex, Star Trac, Horizon, NordicTrack, ProForm, Dexfit y otras marcas, tanto comerciales como de uso en casa."
+      }
+    ],
+    "image": "/img/blog/caminadora-mantenimiento.jpg",
+    "imageAlt": "Caminadora comercial en el gimnasio de un cliente de Polein"
+  },
+  {
+    "slug": "lubricar-banda-caminadora",
+    "title": "Cómo y cada cuánto lubricar la banda de una caminadora (y qué nunca usar)",
+    "description": "Cada cuánto lubricar la banda de una caminadora, qué lubricante usar, por qué no usar grasa ni WD-40 y cómo saber si su tabla no lo necesita.",
+    "excerpt": "La fricción entre banda y tabla es la causa número uno del desgaste del motor. Le explicamos cuándo lubricar, con qué producto y los errores que vemos con más frecuencia.",
+    "category": "Caminadoras",
+    "icon": "fa fa-tint",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "mantenimiento-preventivo-caminadora",
+      "fallas-comunes-caminadora"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué lubricante se usa para la banda de una caminadora?",
+        "a": "En la mayoría de las caminadoras de casa se usa lubricante de silicón 100 % especial para caminadoras. Nunca use grasa, aceite de motor, WD-40 ni aceites en aerosol: atrapan polvo, resecan o deforman la banda y dañan la tabla."
+      },
+      {
+        "q": "¿Todas las caminadoras se lubrican?",
+        "a": "No. Muchas caminadoras comerciales traen tablas impregnadas de cera de fábrica que no requieren lubricante, y agregarlo puede hacer que la banda patine. Revise el manual o pida a un técnico que identifique el tipo de tabla antes de aplicar cualquier producto."
+      },
+      {
+        "q": "¿Qué pasa si no lubrico mi caminadora?",
+        "a": "Aumenta la fricción entre la banda y la tabla. El motor trabaja de más, se calienta, consume más corriente y la tarjeta de control puede dañarse. También se desgastan más rápido la banda y la tabla."
+      }
+    ]
+  },
+  {
+    "slug": "fallas-comunes-caminadora",
+    "title": "8 fallas comunes de caminadoras y qué las provoca",
+    "description": "Banda que patina, ruidos, toques, error de lubricación, inclinación que no sube: las fallas de caminadora que más reparamos en Guadalajara y su causa.",
+    "excerpt": "Estas son las fallas que más encontramos en nuestras visitas, qué suele estar detrás de cada una y cuándo conviene apagar el equipo y llamar a un técnico.",
+    "category": "Caminadoras",
+    "icon": "fa fa-exclamation-triangle",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 8,
+    "featured": true,
+    "related": [
+      "mantenimiento-preventivo-caminadora",
+      "lubricar-banda-caminadora",
+      "reparar-o-reemplazar-caminadora"
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué mi caminadora se detiene sola?",
+        "a": "Las causas más comunes son una banda con demasiada fricción (falta de lubricación o tabla desgastada) que hace que el motor se sobrecargue, un sensor de velocidad desconectado o dañado, la llave de seguridad mal colocada o una falla en la tarjeta de control."
+      },
+      {
+        "q": "¿Por qué mi caminadora da toques?",
+        "a": "La fricción de la banda genera electricidad estática, sobre todo en ambientes secos y con calzado de suela de hule. Ayuda conectarla a un contacto con tierra física, usar un tapete antiestático y mantener la banda y la tabla en buen estado. Si persiste, requiere revisión técnica."
+      },
+      {
+        "q": "¿Es seguro usar una caminadora que hace ruido?",
+        "a": "Un ruido nuevo indica desgaste: baleros, rodillos, banda del motor o motor de elevación. Puede seguir funcionando un tiempo, pero si el ruido aumenta, huele a quemado o la banda se jalonea, conviene dejar de usarla y pedir una revisión para evitar un daño mayor."
+      }
+    ],
+    "image": "/img/blog/caminadora-revision.jpg",
+    "imageAlt": "Caminadora comercial lista para revisión técnica"
+  },
+  {
+    "slug": "mantenimiento-eliptica",
+    "title": "Mantenimiento de elíptica: guía completa para casa y gimnasio",
+    "description": "Mantenimiento de elíptica: lubricación de pernos, bujes y baleros, ajuste de bandas, resistencia y batería. Frecuencia recomendada y señales de alerta.",
+    "excerpt": "Las elípticas tienen muchos puntos de giro que se resecan con el uso. Le explicamos qué revisamos, cada cuánto y cómo detectar a tiempo una pieza que está por fallar.",
+    "category": "Elípticas",
+    "icon": "fa fa-refresh",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 7,
+    "featured": true,
+    "related": [
+      "eliptica-hace-ruido",
+      "plan-mantenimiento-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una elíptica?",
+        "a": "En gimnasios recomendamos cada 2 a 3 meses, porque los pernos y bujes de los brazos se resecan rápido con uso intensivo. En casa, cada 6 a 12 meses según la frecuencia de uso."
+      },
+      {
+        "q": "¿Por qué mi elíptica tarda en encender o se apaga la pantalla?",
+        "a": "Muchas elípticas comerciales se alimentan del propio pedaleo y usan una batería interna para arrancar la consola. Cuando la batería se agota, la pantalla tarda en prender o se apaga al subir la resistencia. Normalmente se resuelve cambiando la batería y revisando las conexiones."
+      },
+      {
+        "q": "¿Se puede lubricar una elíptica con WD-40?",
+        "a": "No es recomendable. El WD-40 es un desengrasante y limpia la lubricación que sí necesitan los pernos y bujes. Cada punto requiere el producto adecuado: grasa para pernos y bujes metálicos, y nada de lubricante en bandas ni en rieles con ruedas de poliuretano."
+      }
+    ],
+    "image": "/img/blog/eliptica.jpg",
+    "imageAlt": "Elíptica comercial en el gimnasio de un condominio"
+  },
+  {
+    "slug": "eliptica-hace-ruido",
+    "title": "¿Su elíptica rechina o hace ruido? Causas y soluciones",
+    "description": "Rechinidos, golpeteos, juego en los brazos o polvo negro bajo la elíptica: qué significa cada ruido, qué pieza suele fallar y cómo se corrige.",
+    "excerpt": "Un rechinido casi siempre es un buje o perno seco; un golpeteo, un balero o un tornillo flojo. Aprenda a identificar el origen del ruido antes de que se convierta en una pieza rota.",
+    "category": "Elípticas",
+    "icon": "fa fa-volume-up",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "mantenimiento-eliptica",
+      "plan-mantenimiento-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué rechina mi elíptica?",
+        "a": "Lo más común es que los pernos y bujes de los brazos o de la unión brazo-pedal estén secos. Se corrige limpiando y lubricando esos puntos; si el buje ya tiene juego, hay que cambiarlo."
+      },
+      {
+        "q": "¿Qué es el polvo negro debajo de mi elíptica?",
+        "a": "Normalmente es desgaste de la banda de transmisión o de las ruedas de los rieles. Si aparece de repente o en cantidad, revise la banda: una banda desalineada o desgarrada puede romperse y dejar el equipo fuera de servicio."
+      },
+      {
+        "q": "¿Puedo seguir usando la elíptica si los brazos tienen juego?",
+        "a": "No es recomendable. El juego indica bujes o pernos desgastados; si se sigue usando, el perno puede barrer la rosca o fracturar la pieza donde se aloja, lo que vuelve la reparación mucho más costosa."
+      }
+    ]
+  },
+  {
+    "slug": "plan-mantenimiento-gimnasio",
+    "title": "Plan de mantenimiento preventivo para gimnasios, hoteles y condominios",
+    "description": "Cómo organizar el mantenimiento de equipos en gimnasios, hoteles y condominios: frecuencias por equipo, checklist diario e historial por máquina.",
+    "excerpt": "Un equipo fuera de servicio es un socio molesto o un huésped que no vuelve. Así armamos un plan de mantenimiento por equipo, con frecuencias reales y seguimiento por QR.",
+    "category": "Gimnasios",
+    "icon": "fa fa-building",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 7,
+    "featured": false,
+    "related": [
+      "mantenimiento-preventivo-caminadora",
+      "cambio-cable-gimnasio",
+      "mantenimiento-bicicleta-spinning"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto debe dar mantenimiento un gimnasio a sus equipos?",
+        "a": "Para equipo cardiovascular con uso diario recomendamos un preventivo cada 2 meses en promedio (de 1 a 3 meses según la afluencia). El equipo de fuerza con cables y poleas puede revisarse cada 2 a 3 meses, cambiando cables en cuanto muestren desgaste."
+      },
+      {
+        "q": "¿Qué ventajas tiene un contrato de mantenimiento preventivo?",
+        "a": "Menos equipos fuera de servicio, reparaciones más baratas porque se detectan a tiempo, visitas programadas sin tener que perseguir al técnico, y un historial por máquina que ayuda a decidir cuándo conviene reemplazar un equipo."
+      },
+      {
+        "q": "¿Atienden gimnasios de condominios y hoteles?",
+        "a": "Sí. Atendemos gimnasios comerciales, hoteles, condominios y particulares en toda la zona metropolitana de Guadalajara, y evaluamos servicio foráneo según la ubicación."
+      }
+    ],
+    "image": "/img/blog/elipticas-gimnasio.jpg",
+    "imageAlt": "Área de cardio de un gimnasio de condominio atendido por Polein"
+  },
+  {
+    "slug": "reparar-o-reemplazar-caminadora",
+    "title": "¿Reparar o reemplazar su caminadora? Cómo decidir",
+    "description": "¿Reparar o comprar otra caminadora? Criterios de costo, refacciones originales, genéricas o seminuevas y vida útil para decidir con datos.",
+    "excerpt": "Muchas caminadoras que se dan por perdidas se recuperan con una banda, un motor de elevación o una tarjeta. Estos son los criterios que usamos para recomendar reparar o cambiar.",
+    "category": "Caminadoras",
+    "icon": "fa fa-balance-scale",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": false,
+    "related": [
+      "fallas-comunes-caminadora",
+      "mantenimiento-preventivo-caminadora"
+    ],
+    "faq": [
+      {
+        "q": "¿Vale la pena reparar una caminadora comercial usada?",
+        "a": "Casi siempre. Las caminadoras comerciales (Life Fitness, Precor, Matrix, Technogym) están hechas para durar muchos años y sus piezas se consiguen nuevas, genéricas o seminuevas. Una reparación suele costar una fracción de un equipo nuevo equivalente."
+      },
+      {
+        "q": "¿Qué pasa si ya no venden la refacción original?",
+        "a": "Buscamos alternativas: piezas genéricas compatibles, refacciones seminuevas o, en algunas piezas mecánicas, fabricarlas o repararlas en torno. Por ejemplo, cuando se descontinuaron tapas de motor originales para algunos modelos, cotizamos tapas seminuevas como reemplazo."
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-bicicleta-spinning",
+    "title": "Mantenimiento de bicicletas de spinning y bicicletas fijas: guía completa",
+    "description": "Qué incluye el mantenimiento de una bicicleta de spinning o fija: banda o cadena, resistencia, guías, pedales y asiento. Frecuencia y señales de alerta.",
+    "excerpt": "Banda reseca, guías trabadas, pedales con juego y asientos dañados: lo que más encontramos en bicicletas y cómo lo prevenimos en cada servicio.",
+    "category": "Bicicletas",
+    "icon": "fa fa-bicycle",
+    "image": "/img/blog/bicicletas-fijas.jpg",
+    "imageAlt": "Bicicletas fijas y recumbentes en el gimnasio de un cliente de Polein",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "plan-mantenimiento-gimnasio",
+      "revision-mantenimiento-o-reparacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una bicicleta de spinning?",
+        "a": "En salones con clases diarias, cada 1 a 2 meses; en gimnasios, hoteles y condominios, cada 2 a 3 meses. En casa, cada 6 meses con uso frecuente o una vez al año con uso ocasional."
+      },
+      {
+        "q": "¿Por qué rechina mi bicicleta de spinning?",
+        "a": "Lo más común es una banda de transmisión reseca, guías de ajuste sin lubricación o un balero dañado en el eje. Una limpieza, lubricación y ajuste suele eliminar el ruido; si la banda o el balero ya están dañados, se reemplazan."
+      },
+      {
+        "q": "¿Qué piezas se cambian más en una bicicleta de gimnasio?",
+        "a": "Bandas de transmisión, asientos, pedales y sus correas, baleros del eje y, en bicicletas de spinning con freno por fricción, la zapata o fieltro de resistencia."
+      }
+    ]
+  },
+  {
+    "slug": "cambio-cable-gimnasio",
+    "title": "Cuándo cambiar el cable de una multiestación o polea de gimnasio",
+    "description": "Señales de que el cable de una multiestación o polea debe cambiarse, qué incluye el cambio (cable, grapas, guardacabos, poleas) y cómo evitar que se dañe.",
+    "excerpt": "El cable es una pieza de desgaste y de seguridad. Aprenda a detectar un cable dañado a tiempo y qué revisamos al cambiarlo: herrajes, poleas, guías y selector.",
+    "category": "Equipo de fuerza",
+    "icon": "fa fa-link",
+    "image": "/img/blog/selector-peso-integrado.jpg",
+    "imageAlt": "Pila de peso integrado y selector de una estación de fuerza",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "plan-mantenimiento-gimnasio",
+      "revision-mantenimiento-o-reparacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto se cambia el cable de un aparato de gimnasio?",
+        "a": "No hay una fecha fija: depende del uso y del estado de las poleas. Recomendamos revisarlo en cada mantenimiento preventivo (cada 2 a 3 meses en gimnasios) y cambiarlo en cuanto muestre el recubrimiento agrietado, hilos expuestos o extremos dañados."
+      },
+      {
+        "q": "¿Se puede seguir usando un equipo con el cable deshilachado?",
+        "a": "No. Un cable con hilos de acero expuestos puede romperse con carga y lastimar al usuario. Retire el equipo de uso hasta que se cambie."
+      },
+      {
+        "q": "¿Qué incluye el cambio de cable?",
+        "a": "El cable de acero recubierto a la medida, los herrajes nuevos (grapas, guardacabos y bolas tope según la configuración), la revisión de poleas, el ajuste del recorrido y del selector y la lubricación de guías."
+      }
+    ]
+  },
+  {
+    "slug": "revision-mantenimiento-o-reparacion",
+    "title": "Revisión, mantenimiento o reparación: qué servicio pedir para su equipo",
+    "description": "Diferencia entre revisión, mantenimiento preventivo y reparación de equipos de gimnasio, cuándo conviene cada uno y qué información tener lista al solicitarlo.",
+    "excerpt": "¿Su equipo no enciende, rechina o solo lleva tiempo sin servicio? Le explicamos qué servicio pedir en cada caso para ahorrar visitas y dinero.",
+    "category": "Guías",
+    "icon": "fa fa-question-circle",
+    "image": "/img/blog/estacion-fuerza.jpg",
+    "imageAlt": "Estación de fuerza con peso integrado en un gimnasio residencial",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": true,
+    "related": [
+      "mantenimiento-preventivo-caminadora",
+      "fallas-comunes-caminadora",
+      "mantenimiento-bicicleta-spinning"
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es una revisión de equipo de gimnasio?",
+        "a": "Es un diagnóstico: el técnico inspecciona el equipo, identifica la falla y las piezas involucradas y le entrega la información para decidir. Los ajustes menores se resuelven en el momento."
+      },
+      {
+        "q": "¿Cuál es la diferencia entre mantenimiento y reparación?",
+        "a": "El mantenimiento preventivo se hace a un equipo que funciona, para evitar fallas: limpieza, lubricación y ajustes. La reparación corrige una falla ya identificada, normalmente cambiando o reparando una pieza."
+      },
+      {
+        "q": "¿Qué información necesito para solicitar un servicio?",
+        "a": "Tipo de equipo, marca y modelo, qué falla y desde cuándo, una foto o video corto y los datos de ubicación y acceso (piso, elevador, estacionamiento)."
+      }
+    ]
+  }
+]

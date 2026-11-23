@@ -14,6 +14,9 @@ import { Contact } from "./components/contact";
 import { Brands } from "./components/brands";
 import { Process } from "./components/process";
 import { Stats } from "./components/stats";
+import { BlogTeaser } from "./components/blogteaser";
+import BlogPosts from "./blog/posts.json";
+import BlogData from "./blog/blog.json";
 import { WhatsAppButton } from "./components/whatsappbutton";
 import PrivacyPolicy from './components/PrivacyPolicy';
 import JsonData from "./data/data.json";
@@ -68,6 +71,7 @@ const App = () => {
                 reviewLink={landingPageData.Contact ? landingPageData.Contact.googleReview || landingPageData.Contact.google : ""}
               />
               <Faq data={landingPageData.Faq} />
+              <BlogTeaser posts={BlogPosts} labels={BlogData.teaser} />
               <Contact {...contactProps} />
             </>
           } />
