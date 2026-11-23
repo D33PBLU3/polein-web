@@ -15,5 +15,5 @@ export const TRACKING = {
   },
 
   // Meta (Facebook/Instagram) → Events Manager › Pixel ID (e.g. "123456789012345")
-  META_PIXEL_ID: "",
+  META_PIXEL_ID: "3044279845920634",
 };

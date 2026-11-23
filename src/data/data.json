@@ -205,7 +205,7 @@
     "twitter": "",
     "hours": "Lunes a sábado, 9:00 a 18:00",
     "google": "https://share.google/EturFMX091tf8BWso",
-    "googleReview": ""
+    "googleReview": "https://g.page/r/CREfNqvmBeD5EAE/review"
   },
   "Features": [
     {
@@ -283,7 +283,7 @@
           [
             "EmailJS: envío por correo electrónico de los mensajes del formulario de contacto.",
             "Google (Gmail y Google Analytics): recepción de correos y estadísticas de uso del Sitio.",
-            "Meta (WhatsApp): mensajería, cuando usted decide contactarnos por ese medio."
+            "Meta (WhatsApp, Facebook e Instagram): mensajería, cuando usted decide contactarnos por WhatsApp, y medición de anuncios mediante el Píxel de Meta."
           ],
           "Sus datos podrán ser compartidos con autoridades competentes únicamente cuando exista un requerimiento legal."
         ]
@@ -293,12 +293,13 @@
         "content": [
           "El Sitio utiliza cookies y tecnologías similares de Google Analytics para conocer el número de visitas, las páginas consultadas, el origen de las visitas, el tipo de dispositivo, la ubicación aproximada y los clics en los botones de contacto (WhatsApp, llamada y formulario). Esta información se utiliza de forma estadística.",
           "Al llegar al Sitio guardamos en su navegador (almacenamiento local) cómo llegó a él, por ejemplo desde un anuncio de Google, una búsqueda o una red social. Si envía el formulario de contacto, ese dato y su respuesta a “¿Cómo nos conociste?” se incluyen en su mensaje, para saber qué medios nos funcionan mejor.",
-          "Podremos utilizar también herramientas de publicidad, como Google Ads y el Píxel de Meta, para medir la eficacia de nuestros anuncios.",
+          "También utilizamos herramientas de publicidad, Google Ads y el Píxel de Meta, para medir la eficacia de nuestros anuncios y, en su caso, mostrar anuncios de Polein a personas que ya visitaron el Sitio. Estas herramientas registran las visitas y los clics en los botones de contacto y el envío del formulario, pero no reciben el contenido de su mensaje.",
           "Usted puede deshabilitar estas tecnologías:",
           [
             "Desde la configuración de cookies de su navegador.",
             "Instalando el complemento de inhabilitación de Google Analytics: https://tools.google.com/dlpage/gaoptout",
-            "Desde la configuración de anuncios de Google: https://adssettings.google.com"
+            "Desde la configuración de anuncios de Google: https://adssettings.google.com",
+            "Desde sus preferencias de anuncios en Meta: https://www.facebook.com/adpreferences"
           ]
         ]
       },
