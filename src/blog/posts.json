@@ -67,16 +67,7 @@
         "q": "¿Qué pasa si no lubrico mi caminadora?",
         "a": "Aumenta la fricción entre la banda y la tabla. El motor trabaja de más, se calienta, consume más corriente y la tarjeta de control puede dañarse. También se desgastan más rápido la banda y la tabla."
       }
-    ],
-    "beforeAfter": [
-      {
-        "before": "/img/blog/lubricar-banda-caminadora-antes.jpg",
-        "after": "/img/blog/lubricar-banda-caminadora-despues.jpg",
-        "caption": "Caminadora de casa: revisión interna del motor y caminadora lista después del servicio"
-      }
-    ],
-    "image": "/img/blog/lubricar-banda-caminadora-despues.jpg",
-    "imageAlt": "Caminadora de casa lista después del mantenimiento"
+    ]
   },
   {
     "slug": "fallas-comunes-caminadora",
@@ -106,15 +97,6 @@
       {
         "q": "¿Es seguro usar una caminadora que hace ruido?",
         "a": "Un ruido nuevo indica desgaste: baleros, rodillos, banda del motor o motor de elevación. Puede seguir funcionando un tiempo, pero si el ruido aumenta, huele a quemado o la banda se jalonea, conviene dejar de usarla y pedir una revisión para evitar un daño mayor."
-      }
-    ],
-    "image": "/img/blog/fallas-comunes-caminadora-despues.jpg",
-    "imageAlt": "Compartimento del motor de una caminadora limpio y revisado",
-    "beforeAfter": [
-      {
-        "before": "/img/blog/fallas-comunes-caminadora-antes.jpg",
-        "after": "/img/blog/fallas-comunes-caminadora-despues.jpg",
-        "caption": "Compartimento del motor de una caminadora antes y después de la limpieza y revisión"
       }
     ]
   },
@@ -185,16 +167,7 @@
         "q": "¿Puedo seguir usando la elíptica si los brazos tienen juego?",
         "a": "No es recomendable. El juego indica bujes o pernos desgastados; si se sigue usando, el perno puede barrer la rosca o fracturar la pieza donde se aloja, lo que vuelve la reparación mucho más costosa."
       }
-    ],
-    "beforeAfter": [
-      {
-        "before": "/img/blog/eliptica-hace-ruido-antes.jpg",
-        "after": "/img/blog/eliptica-hace-ruido-despues.jpg",
-        "caption": "Pivote del volante de una elíptica al revisarlo y brazos ajustados después del servicio"
-      }
-    ],
-    "image": "/img/blog/eliptica-hace-ruido-despues.jpg",
-    "imageAlt": "Elíptica comercial después del ajuste de brazos y pivotes"
+    ]
   },
   {
     "slug": "plan-mantenimiento-gimnasio",
@@ -210,7 +183,8 @@
     "related": [
       "mantenimiento-preventivo-caminadora",
       "cambio-cable-gimnasio",
-      "mantenimiento-bicicleta-spinning"
+      "mantenimiento-bicicleta-spinning",
+      "mantenimiento-multiestacion"
     ],
     "faq": [
       {
@@ -224,15 +198,6 @@
       {
         "q": "¿Atienden gimnasios de condominios y hoteles?",
         "a": "Sí. Atendemos gimnasios comerciales, hoteles, condominios y particulares en toda la zona metropolitana de Guadalajara, y evaluamos servicio foráneo según la ubicación."
-      }
-    ],
-    "image": "/img/blog/plan-mantenimiento-gimnasio-despues.jpg",
-    "imageAlt": "Caminadora lista en el gimnasio de un hotel",
-    "beforeAfter": [
-      {
-        "before": "/img/blog/plan-mantenimiento-gimnasio-antes.jpg",
-        "after": "/img/blog/plan-mantenimiento-gimnasio-despues.jpg",
-        "caption": "Caminadora en el gimnasio de un hotel: revisión del motor y equipo listo para los huéspedes"
       }
     ]
   },
@@ -277,7 +242,8 @@
     "featured": false,
     "related": [
       "plan-mantenimiento-gimnasio",
-      "revision-mantenimiento-o-reparacion"
+      "revision-mantenimiento-o-reparacion",
+      "mantenimiento-skierg-air-bike"
     ],
     "faq": [
       {
@@ -308,15 +274,14 @@
     "excerpt": "El cable es una pieza de desgaste y de seguridad. Aprenda a detectar un cable dañado a tiempo y qué revisamos al cambiarlo: herrajes, poleas, guías y selector.",
     "category": "Equipo de fuerza",
     "icon": "fa fa-link",
-    "image": "/img/blog/cambio-cable-gimnasio-despues.jpg",
-    "imageAlt": "Cable nuevo instalado en las poleas de una multiestación",
     "datePublished": "2026-11-23",
     "dateModified": "2026-11-23",
     "readingMinutes": 6,
     "featured": false,
     "related": [
       "plan-mantenimiento-gimnasio",
-      "revision-mantenimiento-o-reparacion"
+      "revision-mantenimiento-o-reparacion",
+      "mantenimiento-multiestacion"
     ],
     "faq": [
       {
@@ -331,13 +296,6 @@
         "q": "¿Qué incluye el cambio de cable?",
         "a": "El cable de acero recubierto a la medida, los herrajes nuevos (grapas, guardacabos y bolas tope según la configuración), la revisión de poleas, el ajuste del recorrido y del selector y la lubricación de guías."
       }
-    ],
-    "beforeAfter": [
-      {
-        "before": "/img/blog/cambio-cable-gimnasio-antes.jpg",
-        "after": "/img/blog/cambio-cable-gimnasio-despues.jpg",
-        "caption": "Cable de una multiestación antes del cambio y cable nuevo instalado en sus poleas"
-      }
     ]
   },
   {
@@ -347,8 +305,6 @@
     "excerpt": "¿Su equipo no enciende, rechina o solo lleva tiempo sin servicio? Le explicamos qué servicio pedir en cada caso para ahorrar visitas y dinero.",
     "category": "Guías",
     "icon": "fa fa-question-circle",
-    "image": "/img/blog/estacion-fuerza.jpg",
-    "imageAlt": "Estación de fuerza con peso integrado en un gimnasio residencial",
     "datePublished": "2026-11-23",
     "dateModified": "2026-11-23",
     "readingMinutes": 5,
@@ -370,6 +326,249 @@
       {
         "q": "¿Qué información necesito para solicitar un servicio?",
         "a": "Tipo de equipo, marca y modelo, qué falla y desde cuándo, una foto o video corto y los datos de ubicación y acceso (piso, elevador, estacionamiento)."
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-multiestacion",
+    "title": "Mantenimiento de multiestaciones: cables, poleas, guías y selector",
+    "description": "Qué incluye el mantenimiento de una multiestación de gimnasio: cables, poleas, guías, selector, tapicería y tornillería. Frecuencia y señales de alerta.",
+    "excerpt": "Una sola falla puede dejar fuera varias estaciones. Esto revisamos en cada multiestación: cables, poleas, guías, selector, tapicería y agarres.",
+    "category": "Equipo de fuerza",
+    "icon": "fa fa-th-large",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "cambio-cable-gimnasio",
+      "peso-integrado-pila-trabada",
+      "retapizado-bancos-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una multiestación?",
+        "a": "En gimnasios comerciales cada 2 meses; en condominios y hoteles cada 2 a 3 meses; en casa cada 6 meses."
+      },
+      {
+        "q": "¿Por qué la pila de peso de mi multiestación sube a tirones?",
+        "a": "Normalmente por guías sucias, secas o engrasadas con grasa no apta, o por un cable flojo. Se corrige limpiando y lubricando las guías y ajustando la tensión del cable."
+      },
+      {
+        "q": "¿Qué pasa si sigo usando una estación con el cable dañado?",
+        "a": "El cable puede romperse con carga y lastimar al usuario. Retire esa estación de uso hasta cambiar el cable."
+      }
+    ]
+  },
+  {
+    "slug": "peso-integrado-pila-trabada",
+    "title": "Equipo de peso integrado: por qué se traba la pila de peso y cómo se corrige",
+    "description": "Por qué se traba, rechina o sube a tirones la pila de un aparato de peso integrado: guías, cable, selector, poleas y sensores. Causas y soluciones.",
+    "excerpt": "Prensa, extensión, femoral, abductor: si la pila de peso se traba o rechina, casi siempre es una de estas seis causas.",
+    "category": "Equipo de fuerza",
+    "icon": "fa fa-bars",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "mantenimiento-multiestacion",
+      "cambio-cable-gimnasio",
+      "retapizado-bancos-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué se traba la pila de peso de un aparato?",
+        "a": "Las causas más comunes son guías sucias o con la grasa equivocada, un cable flojo, un selector dañado o mal metido, y poleas con baleros dañados."
+      },
+      {
+        "q": "¿Con qué se lubrican las guías de un aparato de peso integrado?",
+        "a": "Con el lubricante indicado por el fabricante para guías de equipo de gimnasio, después de limpiar la grasa vieja. La grasa común atrapa polvo y empeora el problema."
+      },
+      {
+        "q": "¿Cada cuánto se da mantenimiento al equipo de peso integrado?",
+        "a": "Cada 2 a 3 meses en gimnasios y cada 6 meses en condominios y casas."
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-escaladora",
+    "title": "Mantenimiento de escaladoras y escaleras (stepper y stepmill)",
+    "description": "Mantenimiento de escaladoras de pedales y escaleras tipo stepmill: cadenas, engranes, baleros, escalones y consola. Frecuencia, señales de alerta y traslado.",
+    "excerpt": "Escaladora de pedales o escalera de escalones giratorios: su mantenimiento es distinto. Le explicamos qué revisar en cada una y cuándo.",
+    "category": "Cardio",
+    "icon": "fa fa-level-up",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": false,
+    "related": [
+      "armado-instalacion-equipo-gimnasio",
+      "plan-mantenimiento-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Cuál es la diferencia entre escaladora y escalera?",
+        "a": "La escaladora (stepper) tiene dos pedales que suben y bajan; la escalera (stepmill) tiene escalones que giran como una escalera eléctrica, con motor, cadenas y engranes."
+      },
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una escalera de gimnasio?",
+        "a": "En gimnasios comerciales cada 2 meses; en hoteles y condominios cada 2 a 3 meses."
+      },
+      {
+        "q": "¿Por qué mi escalera hace ruido metálico?",
+        "a": "Suele ser una cadena seca o floja, engranes desgastados o un balero dañado. Requiere limpieza, engrasado y ajuste, y cambiar el balero si es necesario."
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-remadora",
+    "title": "Mantenimiento de remadoras: aire, magnéticas y de agua",
+    "description": "Mantenimiento de remadoras de aire, magnéticas o de agua: riel y ruedas del asiento, cadena, retorno y consola. Y qué revisar al comprar una usada.",
+    "excerpt": "Asiento que se mueve, cadena que suena o manija que no regresa: lo que revisamos en cada remadora y qué checar antes de comprar una seminueva.",
+    "category": "Cardio",
+    "icon": "fa fa-exchange",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "mantenimiento-skierg-air-bike",
+      "revision-mantenimiento-o-reparacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Se engrasa el riel de una remadora?",
+        "a": "No. El riel se limpia; el asiento debe rodar sobre sus ruedas, no resbalar. Engrasarlo atrapa polvo y daña las ruedas."
+      },
+      {
+        "q": "¿Por qué la manija de mi remadora no regresa?",
+        "a": "El cordón elástico o el resorte de retorno perdió tensión o se rompió. Se reemplaza para que la manija vuelva a regresar sola."
+      },
+      {
+        "q": "¿Cada cuánto se le da mantenimiento a una remadora?",
+        "a": "Cada 2 meses en gimnasios o boxes, cada 3 meses en hoteles y condominios y cada 6 a 12 meses en casa."
+      }
+    ]
+  },
+  {
+    "slug": "revision-smith-jaula-rack",
+    "title": "Smith, jaulas y racks: revisión de seguridad y mantenimiento",
+    "description": "Qué revisar en una máquina Smith, jaula o rack de sentadillas: guías, ganchos, topes, seguros, tornillería y nivelación. Checklist de seguridad para gimnasios.",
+    "excerpt": "Son los equipos donde se mueven las cargas más pesadas. Así revisamos guías, ganchos, topes, seguros, tornillería y nivelación.",
+    "category": "Equipo de fuerza",
+    "icon": "fa fa-shield",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": false,
+    "related": [
+      "mantenimiento-multiestacion",
+      "peso-integrado-pila-trabada"
+    ],
+    "faq": [
+      {
+        "q": "¿Una máquina Smith necesita mantenimiento?",
+        "a": "Sí. Sus guías y rodamientos se limpian y lubrican, y se revisan ganchos, topes y, si tiene, el cable del contrapeso. Es un equipo de seguridad."
+      },
+      {
+        "q": "¿Por qué se mueve mi rack al usarlo?",
+        "a": "Normalmente por tornillos flojos o un piso desnivelado. Se aprietan los tornillos y, si el piso no es parejo, se coloca una calza a la medida o se ancla el equipo."
+      },
+      {
+        "q": "¿Qué hago si un seguro de la jaula está doblado?",
+        "a": "Retire el seguro y no use esa posición hasta reemplazarlo. Un seguro doblado puede no sostener la barra si el usuario la suelta."
+      }
+    ]
+  },
+  {
+    "slug": "retapizado-bancos-gimnasio",
+    "title": "Retapizado de bancos y aparatos de gimnasio: cuándo hacerlo y cómo cuidarlo",
+    "description": "Cuándo retapizar bancos, asientos y respaldos de gimnasio, diferencia entre cambiar forro, espuma o cojín completo, y cómo hacer que el vinil dure más.",
+    "excerpt": "Vinil rajado, espuma hundida o cojines faltantes: cuándo conviene retapizar, cómo es el proceso y cómo cuidar la tapicería para que dure.",
+    "category": "Tapicería",
+    "icon": "fa fa-scissors",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": false,
+    "related": [
+      "peso-integrado-pila-trabada",
+      "mantenimiento-multiestacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Cuándo se debe retapizar un banco de gimnasio?",
+        "a": "Cuando el vinil está rajado, la espuma está expuesta o hundida, las costuras se abrieron o la base está floja. Atender una raja pequeña a tiempo evita cambiar todo el cojín."
+      },
+      {
+        "q": "¿Con qué se limpia la tapicería de gimnasio?",
+        "a": "Con un paño húmedo y jabón neutro o un limpiador apto para vinil. Evite cloro, alcohol puro y solventes, que resecan y agrietan el vinil."
+      },
+      {
+        "q": "¿Se puede retapizar sin cambiar la espuma?",
+        "a": "Sí, si la espuma conserva su forma. Si está aplastada o se deshace, conviene cambiar forro y espuma."
+      }
+    ]
+  },
+  {
+    "slug": "mantenimiento-skierg-air-bike",
+    "title": "Mantenimiento de SkiErg, Air Bike y equipo funcional",
+    "description": "Mantenimiento de simuladores de esquí (SkiErg), bicicletas de aire (Air Bike) y AB Coaster: cuerdas, baleros de clutch, cadenas, pivotes y rieles.",
+    "excerpt": "Cuerdas que patinan, baleros de clutch, pivotes que hacen clac: lo que revisamos en el equipo funcional de boxes, hoteles y estudios.",
+    "category": "Funcional",
+    "icon": "fa fa-bolt",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 5,
+    "featured": false,
+    "related": [
+      "mantenimiento-remadora",
+      "plan-mantenimiento-gimnasio"
+    ],
+    "faq": [
+      {
+        "q": "¿Por qué la cuerda de mi SkiErg patina o se enreda?",
+        "a": "Lo más común es un balero de clutch dañado, el balero de un solo sentido que conecta el tambor con el ventilador. Se reemplaza junto con los baleros del rodillo si están desgastados."
+      },
+      {
+        "q": "¿Qué mantenimiento necesita una Air Bike?",
+        "a": "Limpieza y lubricación de cadena, revisión de baleros del eje y del ventilador, pivotes de los brazos, pedales, asiento y consola."
+      },
+      {
+        "q": "¿Cada cuánto se da mantenimiento al equipo funcional?",
+        "a": "Cada 1 a 2 meses en boxes con clases diarias, cada 2 a 3 meses en gimnasios y hoteles, y cada 6 meses en casa."
+      }
+    ]
+  },
+  {
+    "slug": "armado-instalacion-equipo-gimnasio",
+    "title": "Armado, instalación y mudanza de equipo de gimnasio",
+    "description": "Cómo armar, instalar y trasladar equipo de gimnasio sin dañarlo: revisión de piezas, nivelación, corriente, maniobras entre pisos y reinstalación.",
+    "excerpt": "Equipo nuevo, mudanza o reacomodo: los puntos clave para armar, instalar y mover equipo de gimnasio sin dañarlo y qué necesitamos para cotizar.",
+    "category": "Instalación",
+    "icon": "fa fa-truck",
+    "datePublished": "2026-11-23",
+    "dateModified": "2026-11-23",
+    "readingMinutes": 6,
+    "featured": false,
+    "related": [
+      "mantenimiento-escaladora",
+      "mantenimiento-preventivo-caminadora",
+      "revision-mantenimiento-o-reparacion"
+    ],
+    "faq": [
+      {
+        "q": "¿Arman equipo de gimnasio nuevo?",
+        "a": "Sí. Armamos e instalamos equipo nuevo o reubicado: revisamos piezas, armamos en el lugar final, ajustamos cables, nivelamos y probamos todas las funciones."
+      },
+      {
+        "q": "¿Cómo se cobra subir un equipo a otro piso?",
+        "a": "Cada maniobra adicional, como subir o bajar un piso o pasar por escaleras, se cotiza aparte porque cambia el tiempo y el personal necesario."
+      },
+      {
+        "q": "¿Qué pasa si al armar faltan piezas?",
+        "a": "Las piezas faltantes se tienen que conseguir y tienen un costo extra. Nuestros técnicos llevan un surtido básico de tornillos, que suelen ser lo que más falta."
       }
     ]
   }

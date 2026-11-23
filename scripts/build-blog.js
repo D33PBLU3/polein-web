@@ -181,6 +181,7 @@ const agenda = (title) => `
 `;
 
 // Before/after photo pairs: p.beforeAfter = [{ before, after, caption }].
+// Rendered at the end of the article (after the body, before the FAQ).
 // Photos are 600x450 (scripts/optimize-blog-photos.sh) so both halves line up.
 const beforeAfter = (p) => (p.beforeAfter || []).map((ba) => `
 <figure class="blog-ba">
@@ -298,10 +299,14 @@ function renderPost(p) {
             <p class="blog-meta">${esc(L.author)} · ${esc(L.updated)} ${fmtDate(p.dateModified)} · ${p.readingMinutes} ${esc(L.minutes)}</p>
           </header>
           ${p.image && !(p.beforeAfter || []).length ? `<figure class="blog-hero"><img src="${p.image}" alt="${esc(p.imageAlt || p.title)}" width="667" height="500" /></figure>` : ""}
-          ${beforeAfter(p)}
           <div class="blog-body">
 ${withAgenda(body, p.title)}
           </div>
+          ${(p.beforeAfter || []).length ? `
+          <section class="blog-ba-section" id="blog-antes-despues">
+            <h2>${esc(L.baTitle)}</h2>
+            ${beforeAfter(p)}
+          </section>` : ""}
           ${p.faq && p.faq.length ? `
           <section class="blog-faq" id="blog-faq">
             <h2>${esc(L.faqTitle)}</h2>

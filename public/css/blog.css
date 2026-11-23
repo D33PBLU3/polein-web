@@ -221,3 +221,6 @@
 .blog-ba-label.blog-ba-after { background: #ff8200; }
 .blog-ba figcaption { font-size: 14px; color: #888; text-align: center; margin-top: 8px; }
 @media (max-width: 480px) { .blog-ba-pair { flex-direction: column; } }
+
+.blog-ba-section { border-top: 1px solid #eee; margin-top: 36px; }
+.blog-ba-section h2 { text-transform: none; font-size: 25px; font-weight: 800; color: #00263a; margin: 30px 0 16px; }
