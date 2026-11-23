@@ -22,7 +22,9 @@ The contact form at `#contact` sends email via the EmailJS client-side SDK witho
 | `email` | `{{email}}` | email (**optional**, may be empty) |
 | `service_type` | `{{service_type}}` | select (optional; options = `Services[].name` + "Otro") |
 | `equipment` | `{{equipment}}` | text (optional, brand/model) |
-| `message` | `{{message}}` | textarea — service type and equipment are **prepended** to it, so they reach the inbox even if the template doesn't use `{{service_type}}` / `{{equipment}}` |
+| `lead_source` | `{{lead_source}}` | select (optional; "¿Cómo nos conociste?", options = `Labels.contact.fields.leadSourceOptions`) |
+| — | `{{visit_source}}` | not a field: the first way this browser reached the site (Google Ads click, Google search, Facebook…), detected in `src/utils/analytics.js` (`getVisitSource`) and kept in localStorage |
+| `message` | `{{message}}` | textarea — service type, equipment, lead source and visit source are **prepended** to it, so they reach the inbox even if the template doesn't use those variables |
 
 If the template sets Reply-To to `{{email}}`, it will be empty for visitors who skip the email field — reply by phone/WhatsApp in that case.
 

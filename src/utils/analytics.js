@@ -84,9 +84,67 @@ const onDocumentClick = (e) => {
   }
 };
 
+// --- Visit source --------------------------------------------------------
+// The first way a visitor reached the site (ad click, Google search, social
+// link...) is kept in localStorage, so a lead that writes on a later visit
+// still reports it. It is sent with the contact form as `visit_source`.
+const SOURCE_KEY = "polein_visit_source";
+
+const describeSource = (url, referrer) => {
+  const p = url.searchParams;
+  const utm = (k) => (p.get(`utm_${k}`) || "").trim();
+  const campaign = utm("campaign");
+  const withCampaign = (label) =>
+    campaign ? `${label} (campaña: ${campaign})` : label;
+
+  if (p.get("gclid") || p.get("gbraid") || p.get("wbraid")) {
+    return withCampaign("Google Ads");
+  }
+  if (p.get("fbclid")) return withCampaign("Facebook / Instagram (enlace)");
+  if (utm("source")) {
+    const medium = utm("medium");
+    return withCampaign(medium ? `${utm("source")} / ${medium}` : utm("source"));
+  }
+
+  let host = "";
+  try {
+    host = referrer ? new URL(referrer).hostname.replace(/^www\./, "") : "";
+  } catch (e) {
+    host = "";
+  }
+  if (!host || host.endsWith("polein.com.mx")) return "";
+  if (/(^|\.)google\./.test(host)) return "Búsqueda en Google";
+  if (/(^|\.)(bing|yahoo|duckduckgo)\./.test(host)) return `Búsqueda (${host})`;
+  if (/(^|\.)(facebook|fb)\.(com|me)$/.test(host)) return "Facebook";
+  if (/(^|\.)instagram\.com$/.test(host)) return "Instagram";
+  return `Sitio externo (${host})`;
+};
+
+const captureVisitSource = () => {
+  try {
+    if (localStorage.getItem(SOURCE_KEY)) return;
+    const source = describeSource(new URL(window.location.href), document.referrer);
+    localStorage.setItem(SOURCE_KEY, source || "Directo / desconocido");
+  } catch (e) {
+    // localStorage blocked (private mode, etc.): just skip it.
+  }
+};
+
+export const getVisitSource = () => {
+  try {
+    return localStorage.getItem(SOURCE_KEY) || "";
+  } catch (e) {
+    return "";
+  }
+};
+
+// Exported for tests.
+export { describeSource };
+
 export const initTracking = () => {
   if (initialized) return;
   initialized = true;
+  captureVisitSource();
   initGtag();
   initMetaPixel();
   document.addEventListener("click", onDocumentClick, true);

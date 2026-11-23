@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { trackEvent } from "../utils/analytics";
+import { trackEvent, getVisitSource } from "../utils/analytics";
 
 const initialState = {
   name: "",
@@ -11,6 +11,7 @@ const initialState = {
   email: "",
   service_type: "",
   equipment: "",
+  lead_source: "",
   message: "",
 };
 
@@ -40,22 +41,29 @@ export const Contact = (props) => {
     setConfirmationMessage("");
     // Service type and equipment are also prepended to the message, so they
     // show in the email even if the EmailJS template doesn't use
-    // {{service_type}} / {{equipment}}.
+    // {{service_type}} / {{equipment}} / {{lead_source}} / {{visit_source}}.
+    const visitSource = getVisitSource();
     const details = [
       form.service_type && `${F.serviceType}: ${form.service_type}`,
       form.equipment && `${F.equipment}: ${form.equipment}`,
+      form.lead_source && `${F.leadSource}: ${form.lead_source}`,
+      visitSource && `${F.visitSource}: ${visitSource}`,
     ]
       .filter(Boolean)
       .join("\n");
     const params = {
       ...form,
+      visit_source: visitSource,
       message: details ? `${details}\n\n${form.message}` : form.message,
     };
     emailjs
       .send("service_polein", "template_tz9ijtt", params, "Gb2jANzOJTCSPTPSj")
       .then(
         () => {
-          trackEvent("generate_lead", { location: "contact_form" });
+          trackEvent("generate_lead", {
+            location: "contact_form",
+            lead_source: form.lead_source || "sin respuesta",
+          });
           setConfirmationMessage(L.success);
           clearState();
           setIsSubmitting(false);
@@ -162,6 +170,25 @@ export const Contact = (props) => {
                       />
                     </div>
                   </div>
+                  <div className="col-xs-12">
+                    <div className="form-group">
+                      <select
+                        id="lead_source"
+                        name="lead_source"
+                        className={`form-control${form.lead_source ? "" : " is-placeholder"}`}
+                        aria-label={F.leadSource}
+                        value={form.lead_source}
+                        onChange={handleChange}
+                      >
+                        <option value="">{F.leadSourcePlaceholder}</option>
+                        {(F.leadSourceOptions || []).map((o) => (
+                          <option key={o} value={o}>
+                            {o}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
                 </div>
                 <div className="form-group">
                   <textarea
@@ -250,6 +277,13 @@ export const Contact = (props) => {
                     <li>
                       <a href={data.facebook} target="_blank" rel="noopener noreferrer" aria-label={L.facebook}>
                         <i className="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                  )}
+                  {data.google && (
+                    <li>
+                      <a href={data.google} target="_blank" rel="noopener noreferrer" aria-label={L.google}>
+                        <i className="fa fa-google"></i>
                       </a>
                     </li>
                   )}

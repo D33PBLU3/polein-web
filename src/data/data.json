@@ -203,7 +203,9 @@
     "facebook": "https://www.facebook.com/profile.php?id=61562725871176",
     "youtube": "https://wa.me/3325117182",
     "twitter": "",
-    "hours": "Lunes a sábado, 9:00 a 18:00"
+    "hours": "Lunes a sábado, 9:00 a 18:00",
+    "google": "https://share.google/EturFMX091tf8BWso",
+    "googleReview": ""
   },
   "Features": [
     {
@@ -236,7 +238,7 @@
     "linkLabel": "Aviso de Privacidad",
     "formNotice": "Al enviar este formulario, usted acepta el tratamiento de sus datos conforme a nuestro",
     "title": "Aviso de Privacidad",
-    "lastUpdated": "Última actualización: 21 de noviembre de 2026",
+    "lastUpdated": "Última actualización: 23 de noviembre de 2026",
     "sections": [
       {
         "title": "1. Identidad y domicilio del responsable",
@@ -290,6 +292,7 @@
         "title": "5. Uso de cookies y tecnologías de rastreo",
         "content": [
           "El Sitio utiliza cookies y tecnologías similares de Google Analytics para conocer el número de visitas, las páginas consultadas, el origen de las visitas, el tipo de dispositivo, la ubicación aproximada y los clics en los botones de contacto (WhatsApp, llamada y formulario). Esta información se utiliza de forma estadística.",
+          "Al llegar al Sitio guardamos en su navegador (almacenamiento local) cómo llegó a él, por ejemplo desde un anuncio de Google, una búsqueda o una red social. Si envía el formulario de contacto, ese dato y su respuesta a “¿Cómo nos conociste?” se incluyen en su mensaje, para saber qué medios nos funcionan mejor.",
           "Podremos utilizar también herramientas de publicidad, como Google Ads y el Píxel de Meta, para medir la eficacia de nuestros anuncios.",
           "Usted puede deshabilitar estas tecnologías:",
           [
@@ -433,7 +436,8 @@
       "imageAlt": "Trabajo realizado por Polein"
     },
     "testimonials": {
-      "title": "TESTIMONIOS"
+      "title": "TESTIMONIOS",
+      "reviewCta": "Déjanos tu reseña en Google"
     },
     "carousel": {
       "prev": "Anterior",
@@ -455,6 +459,19 @@
         "serviceTypeOther": "Otro",
         "equipment": "Equipo",
         "equipmentPlaceholder": "Equipo: marca y modelo (opcional)",
+      "leadSource": "¿Cómo nos conociste?",
+      "leadSourcePlaceholder": "¿Cómo nos conociste? (opcional)",
+      "leadSourceOptions": [
+        "Búsqueda en Google",
+        "Google Maps",
+        "Anuncio en Google",
+        "Facebook",
+        "Instagram",
+        "Recomendación de alguien",
+        "Ya soy cliente",
+        "Otro"
+      ],
+      "visitSource": "Origen de la visita (automático)",
         "message": "Mensaje"
       },
       "submit": "Enviar Mensaje",
@@ -468,7 +485,8 @@
       "hours": "Horario",
       "whatsapp": "WhatsApp",
       "facebook": "Facebook",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "google": "Google"
     },
     "footer": {
       "company": "POLEINMAN, S.A.S. de C.V.",

@@ -73,6 +73,18 @@ export const Testimonials = (props) => {
             </ol>
           </div>
         )}
+        {props.reviewLink && (
+          <div className="text-center">
+            <a
+              href={props.reviewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-lg review-cta"
+            >
+              <i className="fa fa-star"></i> {props.labels ? props.labels.reviewCta : ""}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

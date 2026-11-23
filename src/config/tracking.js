@@ -5,13 +5,13 @@ export const TRACKING = {
   GA4_ID: "G-JH86EDB7JY",
 
   // Google Ads → Goals › Conversions. ID looks like "AW-123456789".
-  GOOGLE_ADS_ID: "",
+  GOOGLE_ADS_ID: "AW-18120282115",
   // One conversion action per lead type; paste each action's label
   // (the part after the slash in "AW-123456789/AbC-dEfGhIj").
   GOOGLE_ADS_LABELS: {
-    whatsapp_click: "",
-    call_click: "",
-    generate_lead: "",
+    whatsapp_click: "uHt2COr2jL4dEIOgtsBD",
+    call_click: "sUpvCO32jL4dEIOgtsBD",
+    generate_lead: "UFbmCPD2jL4dEIOgtsBD",
   },
 
   // Meta (Facebook/Instagram) → Events Manager › Pixel ID (e.g. "123456789012345")

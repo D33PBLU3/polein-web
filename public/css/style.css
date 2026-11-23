@@ -1388,3 +1388,32 @@ label {
   font-size: 13px;
   margin: 6px 0 0;
 }
+/* "Déjanos tu reseña en Google" button under the testimonials carousel */
+.review-cta,
+.review-cta:focus {
+  margin-top: 40px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  color: #00263a;
+  background: #fff;
+  border: 2px solid #00263a;
+  border-radius: 25px;
+}
+.review-cta:hover {
+  color: #fff;
+  background: #00263a;
+}
+.review-cta .fa {
+  margin-right: 6px;
+}
+@media (max-width: 767px) {
+  .review-cta {
+    width: 100%;
+    white-space: normal;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 12px 10px;
+  }
+}

@@ -61,7 +61,12 @@ const App = () => {
               <Tracking data={landingPageData.Tracking} />
               <Clients data={landingPageData.Clients} labels={L.clients} />
               <Gallery data={landingPageData.Gallery} labels={L.gallery} carousel={L.carousel} />
-              <Testimonials data={landingPageData.Testimonials} labels={L.testimonials} carousel={L.carousel} />
+              <Testimonials
+                data={landingPageData.Testimonials}
+                labels={L.testimonials}
+                carousel={L.carousel}
+                reviewLink={landingPageData.Contact ? landingPageData.Contact.googleReview || landingPageData.Contact.google : ""}
+              />
               <Faq data={landingPageData.Faq} />
               <Contact {...contactProps} />
             </>
