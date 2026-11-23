@@ -18,6 +18,7 @@
 | jQuery 1.11.1 (local copy) | Bootstrap JS navbar collapse only | `public/js/jquery.1.11.1.js` |
 | Nivo Lightbox (local copy) | Gallery image lightbox overlay | `public/css/nivo-lightbox/`, `public/js/` |
 | smooth-scroll (^16.1.3) | Animated anchor scroll on navbar clicks | `src/App.jsx` — targets `a[href*="#"]` |
+| Google Analytics 4, Google Ads, Meta Pixel | Visit and lead measurement, ad conversions | `src/config/tracking.js`, `src/utils/analytics.js` — see [`tracking.md`](tracking.md) |
 
 ## Social / Contact Channels
 
@@ -25,4 +26,5 @@
 |---|---|
 | WhatsApp | https://wa.me/3325117182 (stored under `Contact.youtube` key in data.json) |
 | Facebook | https://www.facebook.com/profile.php?id=61562725871176 |
-| Instagram | stored under `Contact.twitter` key in data.json (URL not yet updated from placeholder) |
+| Instagram | stored under `Contact.twitter` key in data.json (still empty, so the icon is hidden) |
+| Google Business Profile | `Contact.google` (profile) and `Contact.googleReview` (https://g.page/r/CREfNqvmBeD5EAE/review) |

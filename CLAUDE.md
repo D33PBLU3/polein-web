@@ -28,7 +28,7 @@ git push origin main    # deploys: GitHub Actions builds and publishes to GitHub
 
 - **The hero headline is baked into the banner image** (`public/img/polein-header.webp`). `Header.title` renders as a screen-reader/SEO-only `<h1 className="sr-only">` — no visible text overlay. Only the CTA buttons (`Header.ctaPrimary` = WhatsApp, `Header.ctaSecondary` = services) sit on top. On mobile (<768px) the banner is shown uncropped (`background-size: 100% auto`) with the buttons below it on navy, because `cover` cropped the image's headline.
 
-- **Tracking IDs live in `src/config/tracking.js`** (GA4, Google Ads, Meta Pixel). An empty ID = that platform never loads. `src/utils/analytics.js` uses one document-level click listener that auto-tracks every `wa.me` link (`whatsapp_click`) and `tel:` link (`call_click`); the contact form fires `generate_lead` on success. New WhatsApp/phone links need no extra tracking code.
+- **Tracking IDs live in `src/config/tracking.js`** (GA4, Google Ads, Meta Pixel). An empty ID = that platform never loads. `src/utils/analytics.js` uses one document-level click listener that auto-tracks every `wa.me` link (`whatsapp_click`) and `tel:` link (`call_click`); the contact form fires `generate_lead` on success. New WhatsApp/phone links need no extra tracking code. Read `docs/tracking.md` before touching tracking: GA4 events must **not** be imported into Google Ads (double counting), and the privacy notice must change with any tracking tool.
 
 - **UI labels live in `data.Labels`** (nav, section titles, form fields/messages, aria-labels, footer) — passed to components as a `labels` prop because some sections' `data` is an array with no room for a title. Add new UI strings there, not in JSX.
 
@@ -54,3 +54,4 @@ Read only the docs relevant to your task:
 - [`docs/architecture.md`](docs/architecture.md) — component diagram and key flows
 - [`docs/development.md`](docs/development.md) — prerequisites, local dev, deploy pipeline
 - [`docs/emailjs.md`](docs/emailjs.md) — contact form / EmailJS integration details
+- [`docs/tracking.md`](docs/tracking.md) — GA4, Google Ads, Meta Pixel IDs, events, lead source, account settings and verification
