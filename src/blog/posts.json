@@ -29,8 +29,15 @@
         "a": "Sí. Atendemos Life Fitness, Precor, Matrix, Technogym, Cybex, Star Trac, Horizon, NordicTrack, ProForm, Dexfit y otras marcas, tanto comerciales como de uso en casa."
       }
     ],
-    "image": "/img/blog/caminadora-mantenimiento.jpg",
-    "imageAlt": "Caminadora comercial en el gimnasio de un cliente de Polein"
+    "image": "/img/blog/mantenimiento-preventivo-caminadora-despues.jpg",
+    "imageAlt": "Caminadoras comerciales listas después del mantenimiento preventivo",
+    "beforeAfter": [
+      {
+        "before": "/img/blog/mantenimiento-preventivo-caminadora-antes.jpg",
+        "after": "/img/blog/mantenimiento-preventivo-caminadora-despues.jpg",
+        "caption": "Caminadoras de un gimnasio residencial: desarmadas durante el mantenimiento preventivo y listas al terminar"
+      }
+    ]
   },
   {
     "slug": "lubricar-banda-caminadora",
@@ -60,7 +67,16 @@
         "q": "¿Qué pasa si no lubrico mi caminadora?",
         "a": "Aumenta la fricción entre la banda y la tabla. El motor trabaja de más, se calienta, consume más corriente y la tarjeta de control puede dañarse. También se desgastan más rápido la banda y la tabla."
       }
-    ]
+    ],
+    "beforeAfter": [
+      {
+        "before": "/img/blog/lubricar-banda-caminadora-antes.jpg",
+        "after": "/img/blog/lubricar-banda-caminadora-despues.jpg",
+        "caption": "Caminadora de casa: revisión interna del motor y caminadora lista después del servicio"
+      }
+    ],
+    "image": "/img/blog/lubricar-banda-caminadora-despues.jpg",
+    "imageAlt": "Caminadora de casa lista después del mantenimiento"
   },
   {
     "slug": "fallas-comunes-caminadora",
@@ -92,8 +108,15 @@
         "a": "Un ruido nuevo indica desgaste: baleros, rodillos, banda del motor o motor de elevación. Puede seguir funcionando un tiempo, pero si el ruido aumenta, huele a quemado o la banda se jalonea, conviene dejar de usarla y pedir una revisión para evitar un daño mayor."
       }
     ],
-    "image": "/img/blog/caminadora-revision.jpg",
-    "imageAlt": "Caminadora comercial lista para revisión técnica"
+    "image": "/img/blog/fallas-comunes-caminadora-despues.jpg",
+    "imageAlt": "Compartimento del motor de una caminadora limpio y revisado",
+    "beforeAfter": [
+      {
+        "before": "/img/blog/fallas-comunes-caminadora-antes.jpg",
+        "after": "/img/blog/fallas-comunes-caminadora-despues.jpg",
+        "caption": "Compartimento del motor de una caminadora antes y después de la limpieza y revisión"
+      }
+    ]
   },
   {
     "slug": "mantenimiento-eliptica",
@@ -124,8 +147,15 @@
         "a": "No es recomendable. El WD-40 es un desengrasante y limpia la lubricación que sí necesitan los pernos y bujes. Cada punto requiere el producto adecuado: grasa para pernos y bujes metálicos, y nada de lubricante en bandas ni en rieles con ruedas de poliuretano."
       }
     ],
-    "image": "/img/blog/eliptica.jpg",
-    "imageAlt": "Elíptica comercial en el gimnasio de un condominio"
+    "image": "/img/blog/mantenimiento-eliptica-despues.jpg",
+    "imageAlt": "Elíptica Precor después del mantenimiento",
+    "beforeAfter": [
+      {
+        "before": "/img/blog/mantenimiento-eliptica-antes.jpg",
+        "after": "/img/blog/mantenimiento-eliptica-despues.jpg",
+        "caption": "Elíptica Precor con la tapa abierta durante el mantenimiento y armada al terminar"
+      }
+    ]
   },
   {
     "slug": "eliptica-hace-ruido",
@@ -155,7 +185,16 @@
         "q": "¿Puedo seguir usando la elíptica si los brazos tienen juego?",
         "a": "No es recomendable. El juego indica bujes o pernos desgastados; si se sigue usando, el perno puede barrer la rosca o fracturar la pieza donde se aloja, lo que vuelve la reparación mucho más costosa."
       }
-    ]
+    ],
+    "beforeAfter": [
+      {
+        "before": "/img/blog/eliptica-hace-ruido-antes.jpg",
+        "after": "/img/blog/eliptica-hace-ruido-despues.jpg",
+        "caption": "Pivote del volante de una elíptica al revisarlo y brazos ajustados después del servicio"
+      }
+    ],
+    "image": "/img/blog/eliptica-hace-ruido-despues.jpg",
+    "imageAlt": "Elíptica comercial después del ajuste de brazos y pivotes"
   },
   {
     "slug": "plan-mantenimiento-gimnasio",
@@ -187,8 +226,15 @@
         "a": "Sí. Atendemos gimnasios comerciales, hoteles, condominios y particulares en toda la zona metropolitana de Guadalajara, y evaluamos servicio foráneo según la ubicación."
       }
     ],
-    "image": "/img/blog/elipticas-gimnasio.jpg",
-    "imageAlt": "Área de cardio de un gimnasio de condominio atendido por Polein"
+    "image": "/img/blog/plan-mantenimiento-gimnasio-despues.jpg",
+    "imageAlt": "Caminadora lista en el gimnasio de un hotel",
+    "beforeAfter": [
+      {
+        "before": "/img/blog/plan-mantenimiento-gimnasio-antes.jpg",
+        "after": "/img/blog/plan-mantenimiento-gimnasio-despues.jpg",
+        "caption": "Caminadora en el gimnasio de un hotel: revisión del motor y equipo listo para los huéspedes"
+      }
+    ]
   },
   {
     "slug": "reparar-o-reemplazar-caminadora",
@@ -223,8 +269,8 @@
     "excerpt": "Banda reseca, guías trabadas, pedales con juego y asientos dañados: lo que más encontramos en bicicletas y cómo lo prevenimos en cada servicio.",
     "category": "Bicicletas",
     "icon": "fa fa-bicycle",
-    "image": "/img/blog/bicicletas-fijas.jpg",
-    "imageAlt": "Bicicletas fijas y recumbentes en el gimnasio de un cliente de Polein",
+    "image": "/img/blog/mantenimiento-bicicleta-spinning-despues.jpg",
+    "imageAlt": "Bicicletas de spinning listas después del mantenimiento",
     "datePublished": "2026-11-23",
     "dateModified": "2026-11-23",
     "readingMinutes": 6,
@@ -246,6 +292,13 @@
         "q": "¿Qué piezas se cambian más en una bicicleta de gimnasio?",
         "a": "Bandas de transmisión, asientos, pedales y sus correas, baleros del eje y, en bicicletas de spinning con freno por fricción, la zapata o fieltro de resistencia."
       }
+    ],
+    "beforeAfter": [
+      {
+        "before": "/img/blog/mantenimiento-bicicleta-spinning-antes.jpg",
+        "after": "/img/blog/mantenimiento-bicicleta-spinning-despues.jpg",
+        "caption": "Bicicleta de spinning con la cubierta abierta para revisar banda y volante, y lista al terminar"
+      }
     ]
   },
   {
@@ -255,8 +308,8 @@
     "excerpt": "El cable es una pieza de desgaste y de seguridad. Aprenda a detectar un cable dañado a tiempo y qué revisamos al cambiarlo: herrajes, poleas, guías y selector.",
     "category": "Equipo de fuerza",
     "icon": "fa fa-link",
-    "image": "/img/blog/selector-peso-integrado.jpg",
-    "imageAlt": "Pila de peso integrado y selector de una estación de fuerza",
+    "image": "/img/blog/cambio-cable-gimnasio-despues.jpg",
+    "imageAlt": "Cable nuevo instalado en las poleas de una multiestación",
     "datePublished": "2026-11-23",
     "dateModified": "2026-11-23",
     "readingMinutes": 6,
@@ -277,6 +330,13 @@
       {
         "q": "¿Qué incluye el cambio de cable?",
         "a": "El cable de acero recubierto a la medida, los herrajes nuevos (grapas, guardacabos y bolas tope según la configuración), la revisión de poleas, el ajuste del recorrido y del selector y la lubricación de guías."
+      }
+    ],
+    "beforeAfter": [
+      {
+        "before": "/img/blog/cambio-cable-gimnasio-antes.jpg",
+        "after": "/img/blog/cambio-cable-gimnasio-despues.jpg",
+        "caption": "Cable de una multiestación antes del cambio y cable nuevo instalado en sus poleas"
       }
     ]
   },

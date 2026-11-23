@@ -28,7 +28,9 @@
     "whatsappMessage": "Hola, vi su guía \"{title}\" y quiero cotizar un servicio.",
     "floatCall": "Llamar a Polein",
     "floatWhatsapp": "Contáctanos por WhatsApp",
-    "privacy": "Aviso de Privacidad"
+    "privacy": "Aviso de Privacidad",
+    "before": "Antes",
+    "after": "Después"
   },
   "teaser": {
     "title": "GUÍAS DE MANTENIMIENTO",

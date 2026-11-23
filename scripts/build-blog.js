@@ -180,6 +180,17 @@ const agenda = (title) => `
 </aside>
 `;
 
+// Before/after photo pairs: p.beforeAfter = [{ before, after, caption }].
+// Photos are 600x450 (scripts/optimize-blog-photos.sh) so both halves line up.
+const beforeAfter = (p) => (p.beforeAfter || []).map((ba) => `
+<figure class="blog-ba">
+  <div class="blog-ba-pair">
+    <div class="blog-ba-item"><span class="blog-ba-label">${esc(L.before)}</span><img src="${ba.before}" alt="${esc(L.before)}: ${esc(ba.caption)}" width="600" height="450" loading="lazy" /></div>
+    <div class="blog-ba-item"><span class="blog-ba-label blog-ba-after">${esc(L.after)}</span><img src="${ba.after}" alt="${esc(L.after)}: ${esc(ba.caption)}" width="600" height="450" loading="lazy" /></div>
+  </div>
+  <figcaption>${esc(ba.caption)}</figcaption>
+</figure>`).join("");
+
 // Insert the agenda box before the middle <h2> of the body (needs at least 2).
 const withAgenda = (body, title) => {
   const idx = [];
@@ -286,7 +297,8 @@ function renderPost(p) {
             <h1>${esc(p.title)}</h1>
             <p class="blog-meta">${esc(L.author)} · ${esc(L.updated)} ${fmtDate(p.dateModified)} · ${p.readingMinutes} ${esc(L.minutes)}</p>
           </header>
-          ${p.image ? `<figure class="blog-hero"><img src="${p.image}" alt="${esc(p.imageAlt || p.title)}" width="667" height="500" /></figure>` : ""}
+          ${p.image && !(p.beforeAfter || []).length ? `<figure class="blog-hero"><img src="${p.image}" alt="${esc(p.imageAlt || p.title)}" width="667" height="500" /></figure>` : ""}
+          ${beforeAfter(p)}
           <div class="blog-body">
 ${withAgenda(body, p.title)}
           </div>
@@ -373,6 +385,12 @@ for (const p of posts) {
   if (slugs.has(p.slug)) throw new Error(`Duplicate slug: ${p.slug}`);
   slugs.add(p.slug);
   if (p.description.length > 170) console.warn(`[blog] description >170 chars: ${p.slug}`);
+  for (const ba of p.beforeAfter || []) {
+    for (const img of [ba.before, ba.after]) {
+      if (!img || !fs.existsSync(path.join(ROOT, "public", img))) throw new Error(`${p.slug}: missing before/after image ${img}`);
+    }
+    if (!ba.caption) throw new Error(`${p.slug}: before/after needs a caption`);
+  }
   if (p.image && !fs.existsSync(path.join(ROOT, "public", p.image))) throw new Error(`${p.slug}: missing image ${p.image}`);
   for (const r of p.related || []) {
     if (!posts.some((x) => x.slug === r)) throw new Error(`${p.slug}: unknown related "${r}"`);

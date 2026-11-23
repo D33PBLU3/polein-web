@@ -206,3 +206,18 @@
   object-fit: cover;
   border-radius: 6px;
 }
+
+/* Before / after pairs */
+.blog-ba { margin: 0 0 30px; }
+.blog-ba-pair { display: flex; gap: 8px; }
+.blog-ba-item { position: relative; flex: 1; }
+.blog-ba-item img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.blog-ba-label {
+  position: absolute; top: 10px; left: 10px;
+  background: rgba(0, 38, 58, 0.85); color: #fff;
+  font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 3px;
+}
+.blog-ba-label.blog-ba-after { background: #ff8200; }
+.blog-ba figcaption { font-size: 14px; color: #888; text-align: center; margin-top: 8px; }
+@media (max-width: 480px) { .blog-ba-pair { flex-direction: column; } }
