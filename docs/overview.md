@@ -24,7 +24,7 @@
 
 | Channel | URL |
 |---|---|
-| WhatsApp | https://wa.me/3325117182 (stored under `Contact.youtube` key in data.json) |
+| WhatsApp | https://wa.me/523325117182 (international format with 52 country code; stored under `Contact.youtube` key in data.json) |
 | Facebook | https://www.facebook.com/profile.php?id=61562725871176 |
 | Instagram | stored under `Contact.twitter` key in data.json (still empty, so the icon is hidden) |
 | Google Business Profile | `Contact.google` (profile) and `Contact.googleReview` (https://g.page/r/CREfNqvmBeD5EAE/review) |
