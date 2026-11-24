@@ -11,13 +11,14 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
+# Build and deploy are separate jobs (GitHub's recommended layout). With both
+# in one job, deploy-pages asked for the artifact ~2 s after upload and the
+# API didn't list it yet ("No artifacts named github-pages"), so every first
+# attempt failed. The job boundary gives the artifact time to register.
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -41,5 +42,12 @@ jobs:
         with:
           path: build
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - uses: actions/deploy-pages@v4
         id: deployment
