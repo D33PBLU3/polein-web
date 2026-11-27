@@ -48,6 +48,8 @@ git push origin main    # deploys: GitHub Actions builds and publishes to GitHub
 
 - **`Team` data has placeholder names** (John Doe, etc.) — the section is rendered but the names/photos have not been updated with real data.
 
+- **Social media drafting** (`scripts/social/draft.js`, plan in `docs/social-automation-plan.md`): Claude turns blog articles into Facebook/Instagram drafts in `social/queue.json` (status `draft`; nothing is published yet). Brand rules and voice live in `social/prompt/system.md`; keep that file stable (no dates or per-run values) so it stays prompt-cached. Same content rules as the blog: no client names, prices or suppliers. `ANTHROPIC_API_KEY` comes from the environment or a git-ignored `.env` in the repo root — never commit keys or Meta tokens.
+
 ## Docs
 
 Read only the docs relevant to your task:
@@ -56,4 +58,5 @@ Read only the docs relevant to your task:
 - [`docs/architecture.md`](docs/architecture.md) — component diagram and key flows
 - [`docs/development.md`](docs/development.md) — prerequisites, local dev, deploy pipeline
 - [`docs/emailjs.md`](docs/emailjs.md) — contact form / EmailJS integration details
+- [`docs/social-automation-plan.md`](docs/social-automation-plan.md) — Facebook/Instagram automation phases, status and setup steps
 - [`docs/tracking.md`](docs/tracking.md) — GA4, Google Ads, Meta Pixel IDs, events, lead source, account settings and verification
