@@ -57,24 +57,29 @@ Same rules as the blog (see `CLAUDE.md`):
 
 ## Phase 0 — Account setup (Dario, ~1–2 hours)
 
+> **Meta is ready (2026-11-27):** app "Polein social", system user polein-bot, token never expires,
+> all 6 permissions. Page ID `349694218235724`, Instagram @poleinman2026 (ID `17841474385563707`).
+> The app's use cases must include Page management and Instagram content — the ads use cases alone
+> don't grant `pages_manage_posts` / `instagram_content_publish`. Still to do: Anthropic key, GitHub secrets.
+
 Claude can't do these steps. They need your Meta login.
 
-- [ ] **Instagram → Professional account (Business)** and link it to the
+- [x] **Instagram → Professional account (Business)** and link it to the
       Polein Facebook Page (Instagram app › Settings › Account type and tools,
       then Meta Business Suite › Settings › Linked accounts).
 - [ ] Add the Instagram URL to `src/data/data.json` (`Contact.twitter`, a
       legacy key name) and to `public/index.html`. Claude can do this edit once you have the URL.
-- [ ] **Meta Business Suite / Business Manager**: confirm the Page and the
+- [x] **Meta Business Suite / Business Manager**: confirm the Page and the
       Instagram account are both assets of the Polein business.
-- [ ] **developers.facebook.com** → create an app (type: Business), connected
+- [x] **developers.facebook.com** → create an app (type: Business), connected
       to the Polein business.
-- [ ] **Business Settings › Users › System users** → create a system user
+- [x] **Business Settings › Users › System users** → create a system user
       (Admin), assign it the Page and the Instagram account, and generate a
       token **that never expires** for the app with these permissions:
       `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
       `instagram_basic`, `instagram_content_publish`, `business_management`.
       Posting only to your own accounts shouldn't need Meta App Review.
-- [ ] Copy `.env.example` to `.env`, paste the token there, then run
+- [x] Copy `.env.example` to `.env`, paste the token there, then run
       `node scripts/social/meta-check.js`: it checks the token (valid, never
       expires, all permissions) and prints the **Page ID** and **Instagram ID**.
       It never posts or prints the token.
