@@ -10,8 +10,10 @@
 //   src/blog/posts.json        metadata per article (title, description, FAQ...)
 //   src/blog/posts/<slug>.html article body (HTML fragment, no <h1>)
 //   src/blog/blog.json         blog UI strings
-//   src/data/data.json         contact info (phone, WhatsApp, address)
+//   src/data/data.json         contact info (phone, WhatsApp, address) + Privacy (privacy notice page)
 //   src/config/tracking.js     GA4 / Google Ads / Meta Pixel IDs
+//
+// Also writes build/aviso-de-privacidad/index.html (see renderPrivacy).
 //
 // Usage: node scripts/build-blog.js [outDir]   (default: build) — runs in postbuild.
 
@@ -369,6 +371,42 @@ function renderIndex() {
 </main>` + pageEnd(blog.index.title);
 }
 
+// Privacy notice as a real file (HTTP 200). The React route /aviso-de-privacidad
+// is served through 404.html with HTTP 404 and renders its text with JS, so Meta
+// (app privacy policy URL) and Google saw it as a missing page. Same content
+// (data.Privacy) and same markup/classes as src/components/PrivacyPolicy.jsx.
+const LINK_RE = /(https?:\/\/[^\s]*[^\s.,;)]|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g;
+const linkify = (text) =>
+  String(text).split(LINK_RE).map((part, i) => {
+    if (i % 2 === 0) return esc(part);
+    const href = part.includes("@") ? `mailto:${part}` : part;
+    return `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(part)}</a>`;
+  }).join("");
+
+function renderPrivacy() {
+  const pv = data.Privacy;
+  const block = (b) => (Array.isArray(b)
+    ? `<ul>${b.map((it) => `<li>${linkify(it)}</li>`).join("")}</ul>`
+    : `<p>${linkify(b)}</p>`);
+  return head({
+    title: `${pv.title} | Polein`,
+    description: `${pv.title} de Polein (POLEINMAN, S.A.S. de C.V.): qué datos personales recabamos en polein.com.mx, para qué los usamos y cómo ejercer sus derechos ARCO.`,
+    canonical: `${SITE}/aviso-de-privacidad/`,
+    ogType: "website",
+    extraLd: [],
+  }) + nav() + `
+<div class="privacy-page" id="privacy">
+  <div class="privacy-container">
+    <h1>${esc(pv.title)}</h1>
+    <p class="privacy-updated">${esc(pv.lastUpdated)}</p>
+    ${pv.sections.map((s) => `<section>
+      <h2>${esc(s.title)}</h2>
+      ${s.content.map(block).join("\n      ")}
+    </section>`).join("\n    ")}
+  </div>
+</div>` + pageEnd(pv.title);
+}
+
 function renderSitemap() {
   const latest = posts.map((p) => p.dateModified).sort().pop();
   const urls = [
@@ -410,5 +448,6 @@ const write = (rel, content) => {
 
 write("blog/index.html", renderIndex());
 for (const p of posts) write(`blog/${p.slug}/index.html`, renderPost(p));
+write("aviso-de-privacidad/index.html", renderPrivacy());
 write("sitemap.xml", renderSitemap());
-console.log(`[blog] ${posts.length} articles + index + sitemap → ${path.relative(ROOT, OUT)}/`);
+console.log(`[blog] ${posts.length} articles + index + privacy notice + sitemap → ${path.relative(ROOT, OUT)}/`);
