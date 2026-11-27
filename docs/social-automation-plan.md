@@ -74,8 +74,10 @@ Claude can't do these steps. They need your Meta login.
       `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`,
       `instagram_basic`, `instagram_content_publish`, `business_management`.
       Posting only to your own accounts shouldn't need Meta App Review.
-- [ ] Get the **Page ID** and the **Instagram business account ID**. Claude can
-      look them up with the token in Phase 3.
+- [ ] Copy `.env.example` to `.env`, paste the token there, then run
+      `node scripts/social/meta-check.js`: it checks the token (valid, never
+      expires, all permissions) and prints the **Page ID** and **Instagram ID**.
+      It never posts or prints the token.
 - [ ] **console.anthropic.com** → create an API key and set a monthly spend
       limit (e.g. $10) as a safety net.
 - [ ] GitHub repo › Settings › Secrets and variables › Actions — add:

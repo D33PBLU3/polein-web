@@ -5,3 +5,4 @@ build/
 # Local secrets (API keys, Meta tokens) — never commit
 .env
 .env.*
+!.env.example
