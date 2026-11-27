@@ -115,7 +115,11 @@ Nothing is posted in this phase. It only produces text.
       - defaults: `claude-opus-5-5`, effort `medium`; `--model` / `--effort` to compare
 - [ ] **Dario:** create the Anthropic API key, then in the repo root create a
       `.env` file (git-ignored) containing `ANTHROPIC_API_KEY=sk-ant-...`. Never paste the key into chat.
-- [ ] Run on 3 articles with both models and compare:
+- [x] First 3 drafts written by Claude Opus 5.5 in Claude Code (no API key) from the
+      same prompt, saved in `social/queue.json`, readable in `social/preview.md`
+      (`node scripts/social/preview.js --out social/preview.md`). All pass the checks.
+- [ ] **Dario:** review `social/preview.md` and note what to change in the tone/rules.
+- [ ] Once there's an API key, run on 3 articles with both models and compare:
       ```bash
       node scripts/social/draft.js --dry-run --limit 3
       node scripts/social/draft.js --dry-run --limit 3 --model claude-sonnet-5-5
