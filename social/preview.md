@@ -46,6 +46,18 @@ Revise cada publicación. Para cambiar algo, edite el texto en `social/queue.jso
 >
 > #mantenimientoeliptica #eliptica #elipticas #mantenimientopreventivo #equipodegimnasio #gimnasio #homegym #reparaciondeequipo #guadalajara #zapopan #jalisco
 
+### Grupos de Facebook — para compartir a mano (82 palabras)
+
+> ¿A alguien le rechina la elíptica en cada zancada? Casi nunca es grave: suele ser que los pernos, bujes o baleros ya están secos.
+>
+> Dos datos que ayudan: no use WD-40 en pernos ni bujes, porque quita la lubricación que sí necesitan; y si aparece polvo negro debajo de la máquina, normalmente es una banda reseca.
+>
+> En casa con uso frecuente, lo ideal es darle mantenimiento cada 6 meses.
+>
+> Guía completa: https://polein.com.mx/blog/mantenimiento-eliptica/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=mantenimiento-eliptica
+>
+> Si alguien necesita revisión, con gusto: WhatsApp 33 2511 7182
+
 ### Carrusel (6 imágenes)
 
 | # | Título | Texto |
@@ -98,6 +110,18 @@ Revise cada publicación. Para cambiar algo, edite el texto en `social/queue.jso
 > Escríbanos por WhatsApp: 33 2511 7182
 >
 > #mantenimientodegimnasio #gimnasio #gimnasios #equipodegimnasio #mantenimientopreventivo #hoteles #condominios #administraciondegimnasios #guadalajara #zapopan #jalisco
+
+### Grupos de Facebook — para compartir a mano (104 palabras)
+
+> Para quienes administran el gimnasio de un condominio, hotel u oficina: un checklist de cinco minutos al abrir detecta la mayoría de los problemas antes de que se conviertan en una reparación.
+>
+> - Encender cada equipo de cardio y probarlo unos segundos.
+> - Revisar que las llaves de seguridad y los paros de emergencia estén en su lugar.
+> - Revisar los cables de los equipos de fuerza y retirar de uso cualquiera con hilos expuestos.
+>
+> Escribimos una guía con frecuencias por tipo de equipo y qué incluir en un plan de mantenimiento: https://polein.com.mx/blog/plan-mantenimiento-gimnasio/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=plan-mantenimiento-gimnasio
+>
+> Si les sirve, con gusto lo platicamos: WhatsApp 33 2511 7182
 
 ### Carrusel (7 imágenes)
 

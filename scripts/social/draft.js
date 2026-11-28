@@ -142,7 +142,7 @@ function buildUserPrompt(post) {
 const SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["hook", "facebook", "instagram", "slides", "review_notes"],
+  required: ["hook", "facebook", "instagram", "group", "slides", "review_notes"],
   properties: {
     hook: { type: "string" },
     facebook: {
@@ -159,6 +159,12 @@ const SCHEMA = {
         caption: { type: "string" },
         hashtags: { type: "array", items: { type: "string" } },
       },
+    },
+    group: {
+      type: "object",
+      additionalProperties: false,
+      required: ["message"],
+      properties: { message: { type: "string" } },
     },
     slides: {
       type: "array",
@@ -211,6 +217,7 @@ function finalize(post, result, opts, usage, servedBy) {
   const date = new Date().toISOString().slice(0, 10);
   // UTM tags so GA4 shows which visits came from Facebook posts.
   const link = `${articleUrl(post.slug)}?utm_source=facebook&utm_medium=social&utm_campaign=${post.slug}`;
+  const groupLink = `${articleUrl(post.slug)}?utm_source=facebook-grupos&utm_medium=social&utm_campaign=${post.slug}`;
   const hashtags = [...new Set(result.instagram.hashtags.map((h) => h.replace(/^#/, "").trim().toLowerCase()))].filter(Boolean);
 
   const item = {
@@ -224,6 +231,8 @@ function finalize(post, result, opts, usage, servedBy) {
     hook: result.hook,
     facebook: { message: result.facebook.message.replace(/\{URL\}/g, link), link },
     instagram: { caption: result.instagram.caption, hashtags },
+    // Shared by hand in Facebook groups (the Groups API no longer exists).
+    group: { message: result.group.message.replace(/\{URL\}/g, groupLink), link: groupLink },
     slides: result.slides,
     reviewNotes: result.review_notes,
     warnings: [],
@@ -242,6 +251,7 @@ function finalize(post, result, opts, usage, servedBy) {
 // things to look at.
 function checkDraft(item) {
   const w = [];
+  const words = (s) => s.split(/\s+/).filter(Boolean).length;
   const fb = item.facebook.message;
   const ig = item.instagram.caption;
   const all = [fb, ig, ...item.slides.map((s) => `${s.title} ${s.body}`)].join("\n");
@@ -252,9 +262,13 @@ function checkDraft(item) {
   if (/descuento|promoci[oó]n|gratis|% de/i.test(all)) w.push("Mentions a discount/promotion — confirm it's real");
   if (!/2511\s?7182|25117182/.test(fb)) w.push("Facebook: WhatsApp number missing");
   if (!/2511\s?7182|25117182/.test(ig)) w.push("Instagram: WhatsApp number missing");
+  if (item.group) {
+    if (!item.group.message.includes(item.source.url)) w.push("Group version: the article link is missing");
+    if (/#\w/.test(item.group.message)) w.push("Group version has hashtags (looks like an ad in groups)");
+    if (words(item.group.message) > 150) w.push(`Group version is long (${words(item.group.message)} words)`);
+  }
   if (item.slides.length < 5 || item.slides.length > 7) w.push(`Carousel has ${item.slides.length} slides (expected 5–7)`);
   if (item.instagram.hashtags.length > 15) w.push(`${item.instagram.hashtags.length} hashtags (max 15)`);
-  const words = (s) => s.split(/\s+/).filter(Boolean).length;
   if (words(fb) > 220) w.push(`Facebook text is long (${words(fb)} words)`);
   if (words(ig) > 180) w.push(`Instagram caption is long (${words(ig)} words)`);
   return w;
@@ -272,6 +286,7 @@ function printDraft(item) {
   console.log("FACEBOOK\n" + item.facebook.message + "\n");
   console.log("INSTAGRAM\n" + item.instagram.caption);
   console.log("\n" + item.instagram.hashtags.map((h) => `#${h}`).join(" ") + "\n");
+  if (item.group) console.log("GRUPOS DE FACEBOOK (compartir a mano)\n" + item.group.message + "\n");
   console.log("CARRUSEL");
   item.slides.forEach((s, i) => console.log(`  ${i + 1}. ${s.title}\n     ${s.body}`));
   if (item.reviewNotes) console.log(`\nNotas para revisar: ${item.reviewNotes}`);

@@ -3,7 +3,8 @@
 // (phase 3 of docs/social-automation-plan.md).
 //
 //   Facebook: multi-photo post (the carousel images) + the message with the blog link.
-//   Instagram: carousel (the same images) + caption and hashtags.
+//   Instagram: carousel (the same images) + caption, hashtags and location tag
+//   (the Polein Page's address, Zapopan; META_IG_LOCATION_ID=none to turn it off).
 //
 // Safety:
 //   - Only posts items with status "approved" in social/queue.json.
@@ -91,18 +92,32 @@ async function waitFinished(containerId) {
   throw new Error(`Instagram media ${containerId} still processing after 90 s`);
 }
 
-async function publishInstagram(item, urls, igId) {
+// Instagram location tag: a Facebook Page with an address. Defaults to the
+// Polein Page (Zapopan); META_IG_LOCATION_ID overrides it, "none" turns it off.
+function locationId(pageId) {
+  const v = (process.env.META_IG_LOCATION_ID || "").trim();
+  if (v.toLowerCase() === "none") return null;
+  return v || pageId;
+}
+
+async function publishInstagram(item, urls, igId, pageId) {
   const children = [];
   for (const image_url of urls) {
     const c = await graph(`/${igId}/media`, { image_url, is_carousel_item: "true" }, { method: "POST" });
     children.push(c.id);
   }
   for (const c of children) await waitFinished(c);
-  const carousel = await graph(
-    `/${igId}/media`,
-    { media_type: "CAROUSEL", children: children.join(","), caption: igCaption(item) },
-    { method: "POST" }
-  );
+  const params = { media_type: "CAROUSEL", children: children.join(","), caption: igCaption(item) };
+  const loc = locationId(pageId);
+  let carousel;
+  try {
+    carousel = await graph(`/${igId}/media`, loc ? { ...params, location_id: loc } : params, { method: "POST" });
+  } catch (err) {
+    if (!loc) throw err;
+    // A bad location must not block the post: publish without it.
+    console.log(`\n   ⚠️  Location ${loc} rejected (${err.message}); publishing without location.`);
+    carousel = await graph(`/${igId}/media`, params, { method: "POST" });
+  }
   await waitFinished(carousel.id);
   const pub = await graph(`/${igId}/media_publish`, { creation_id: carousel.id }, { method: "POST" });
   const info = await graph(`/${pub.id}`, { fields: "permalink" }).catch(() => ({}));
@@ -163,7 +178,7 @@ async function main() {
       record[n] =
         n === "facebook"
           ? await publishFacebook(item, urls, pageId)
-          : await publishInstagram(item, urls, igId);
+          : await publishInstagram(item, urls, igId, pageId);
       record[n].publishedAt = new Date().toISOString();
       save(); // after each network, so a later failure never causes a double post
       console.log(`✅ ${record[n].url || record[n].permalink || "done"}`);

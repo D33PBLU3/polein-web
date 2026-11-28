@@ -79,7 +79,11 @@
       "/social/2026-11-27-mantenimiento-preventivo-caminadora/07.jpg",
       "/social/2026-11-27-mantenimiento-preventivo-caminadora/08.jpg"
     ],
-    "approvedAt": "2026-11-28T00:57:06.994Z"
+    "approvedAt": "2026-11-28T00:57:06.994Z",
+    "group": {
+      "message": "Un consejo para quien tenga caminadora en casa o en el gimnasio del condominio: nunca le ponga grasa, aceite ni WD-40 a la banda. En Polein es uno de los daños que más vemos.\n\nOtras señales de que ya le toca servicio: la banda patina o se jalonea al pisar, hace un zumbido nuevo al subir la velocidad o huele a quemado. Con uso de 3 a 5 veces por semana, lo recomendable es un mantenimiento cada 6 meses.\n\nEscribimos una guía con todo lo que incluye un preventivo: https://polein.com.mx/blog/mantenimiento-preventivo-caminadora/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=mantenimiento-preventivo-caminadora\n\nSi alguien necesita revisión, con gusto: WhatsApp 33 2511 7182",
+      "link": "https://polein.com.mx/blog/mantenimiento-preventivo-caminadora/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=mantenimiento-preventivo-caminadora"
+    }
   },
   {
     "id": "2026-11-27-mantenimiento-eliptica",
@@ -141,7 +145,11 @@
       }
     ],
     "reviewNotes": "",
-    "warnings": []
+    "warnings": [],
+    "group": {
+      "message": "¿A alguien le rechina la elíptica en cada zancada? Casi nunca es grave: suele ser que los pernos, bujes o baleros ya están secos.\n\nDos datos que ayudan: no use WD-40 en pernos ni bujes, porque quita la lubricación que sí necesitan; y si aparece polvo negro debajo de la máquina, normalmente es una banda reseca.\n\nEn casa con uso frecuente, lo ideal es darle mantenimiento cada 6 meses.\n\nGuía completa: https://polein.com.mx/blog/mantenimiento-eliptica/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=mantenimiento-eliptica\n\nSi alguien necesita revisión, con gusto: WhatsApp 33 2511 7182",
+      "link": "https://polein.com.mx/blog/mantenimiento-eliptica/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=mantenimiento-eliptica"
+    }
   },
   {
     "id": "2026-11-27-plan-mantenimiento-gimnasio",
@@ -207,6 +215,10 @@
       }
     ],
     "reviewNotes": "Para clientes de negocio. Termina con \"Pida un plan\" en lugar de \"Agende\"; si prefiere no ofrecer contratos por redes, cámbielo.",
-    "warnings": []
+    "warnings": [],
+    "group": {
+      "message": "Para quienes administran el gimnasio de un condominio, hotel u oficina: un checklist de cinco minutos al abrir detecta la mayoría de los problemas antes de que se conviertan en una reparación.\n\n- Encender cada equipo de cardio y probarlo unos segundos.\n- Revisar que las llaves de seguridad y los paros de emergencia estén en su lugar.\n- Revisar los cables de los equipos de fuerza y retirar de uso cualquiera con hilos expuestos.\n\nEscribimos una guía con frecuencias por tipo de equipo y qué incluir en un plan de mantenimiento: https://polein.com.mx/blog/plan-mantenimiento-gimnasio/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=plan-mantenimiento-gimnasio\n\nSi les sirve, con gusto lo platicamos: WhatsApp 33 2511 7182",
+      "link": "https://polein.com.mx/blog/plan-mantenimiento-gimnasio/?utm_source=facebook-grupos&utm_medium=social&utm_campaign=plan-mantenimiento-gimnasio"
+    }
   }
 ]

@@ -219,6 +219,10 @@ Nothing is posted in this phase. It only produces text.
 
 ## Phase 7 — Results and paid ads (later)
 
+> Facebook groups: Meta removed the Groups API (2024), so group posts are shared **by hand**.
+> Every draft includes a `group.message` version (conversational, no hashtags, link tagged
+> `utm_source=facebook-grupos`). Instagram posts are tagged with the Polein Page location (Zapopan).
+
 - [ ] Weekly job pulls reach/engagement for published posts (Graph API insights)
       into `social/stats.json`, and gives Claude the top topics when choosing what to post next.
 - [ ] Boost the best posts in Meta Ads Manager (manual at first), optimizing for

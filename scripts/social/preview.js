@@ -59,6 +59,9 @@ for (const it of items) {
     ">",
     quote(it.instagram.hashtags.map((h) => `#${h}`).join(" ")),
     "",
+    ...(it.group
+      ? [`### Grupos de Facebook — para compartir a mano (${words(it.group.message)} palabras)`, "", quote(it.group.message), ""]
+      : []),
     `### Carrusel (${it.slides.length} imágenes)`,
     "",
     "| # | Título | Texto |",
