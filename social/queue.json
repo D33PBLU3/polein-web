@@ -1,7 +1,7 @@
 [
   {
     "id": "2026-11-27-mantenimiento-preventivo-caminadora",
-    "status": "draft",
+    "status": "approved",
     "source": {
       "type": "blog",
       "slug": "mantenimiento-preventivo-caminadora",
@@ -78,7 +78,8 @@
       "/social/2026-11-27-mantenimiento-preventivo-caminadora/06.jpg",
       "/social/2026-11-27-mantenimiento-preventivo-caminadora/07.jpg",
       "/social/2026-11-27-mantenimiento-preventivo-caminadora/08.jpg"
-    ]
+    ],
+    "approvedAt": "2026-11-28T00:57:06.994Z"
   },
   {
     "id": "2026-11-27-mantenimiento-eliptica",
