@@ -1,62 +1,10 @@
-# Publicaciones para revisar (3)
+# Publicaciones para revisar (2)
 
 Revise cada publicación. Para cambiar algo, edite el texto en `social/queue.json`.
 
 - [ ] Sin nombres de clientes, gimnasios atendidos, precios ni proveedores
 - [ ] Nada inventado (descuentos, garantías, cifras que no estén en el artículo)
 - [ ] El tono suena a Polein
-
----
-
-## 2026-11-27-mantenimiento-preventivo-caminadora
-
-**Fuente:** [mantenimiento-preventivo-caminadora](https://polein.com.mx/blog/mantenimiento-preventivo-caminadora/) · **Modelo:** claude-opus-5-5 (Claude Code, manual)
-
-**Idea:** Las señales de que una caminadora ya necesita servicio y qué incluye un mantenimiento preventivo.
-
-### Facebook (145 palabras)
-
-> ¿Su caminadora patina, se jalonea al pisar o hace un zumbido nuevo al subir la velocidad? Son señales de que ya le toca mantenimiento.
->
-> Un preventivo bien hecho no es solo pasarle un trapo. En cada visita nuestros técnicos:
-> - Aspiran el compartimento del motor: el polvo se calienta junto a la electrónica.
-> - Lubrican banda y tabla, solo en los modelos que lo requieren.
-> - Ajustan la tensión y centran la banda.
-> - Revisan la banda del rodillo motor, la inclinación y el paro de emergencia.
->
-> ¿Cada cuánto? En gimnasios con mucha afluencia, cada 1 a 2 meses. En casa, con uso de 3 a 5 veces por semana, cada 6 meses.
->
-> Un consejo: nunca use grasa, aceite ni WD-40 en la banda. Es uno de los daños que más vemos.
->
-> Lea la guía completa: https://polein.com.mx/blog/mantenimiento-preventivo-caminadora/?utm_source=facebook&utm_medium=social&utm_campaign=mantenimiento-preventivo-caminadora
-> Agende su mantenimiento por WhatsApp: 33 2511 7182
-
-### Instagram (107 palabras)
-
-> Su caminadora le avisa antes de fallar. ¿La está escuchando?
->
-> Banda que patina o se jalonea, zumbido al subir la velocidad, olor a quemado o una inclinación que tarda en subir: cualquiera de estas señales indica que ya le toca servicio.
->
-> En un mantenimiento preventivo limpiamos el motor por dentro, lubricamos banda y tabla (solo si el modelo lo requiere), ajustamos y centramos la banda, y probamos la electrónica y el paro de emergencia.
->
-> Frecuencia recomendada: cada 1 a 2 meses en gimnasios con mucha afluencia y cada 6 meses en casa.
->
-> Guía completa en nuestro sitio (enlace en el perfil).
-> Agende por WhatsApp: 33 2511 7182
->
-> #mantenimientocaminadora #caminadora #caminadoras #mantenimientopreventivo #equipodegimnasio #gimnasio #homegym #reparaciondecaminadoras #guadalajara #zapopan #jalisco
-
-### Carrusel (7 imágenes)
-
-| # | Título | Texto |
-|---|---|---|
-| 1 | **Su caminadora le avisa antes de fallar** | Qué incluye el mantenimiento preventivo y cada cuánto hacerlo. |
-| 2 | **Limpieza por dentro** | El polvo y la pelusa del compartimento del motor se calientan y causan fallas en la electrónica. |
-| 3 | **Banda bien lubricada** | La fricción obliga al motor a trabajar de más y termina dañando la tarjeta de control. |
-| 4 | **Tensión y centrado** | Una banda floja patina al pisar; una demasiado tensa desgasta rodillos y baleros. |
-| 5 | **¿Cada cuánto?** | Gimnasio con mucha afluencia: cada 1 a 2 meses. En casa, de 3 a 5 veces por semana: cada 6 meses. |
-| 6 | **Nunca use WD-40 en la banda** | Ni grasa ni aceite: es uno de los daños que más vemos. |
-| 7 | **¿Su caminadora necesita servicio?** | Escríbanos por WhatsApp y agende su mantenimiento preventivo. |
 
 ---
 
