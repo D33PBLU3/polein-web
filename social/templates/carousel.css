@@ -1,0 +1,58 @@
+/* Carousel slides for Instagram/Facebook: 1080×1350 (4:5 portrait).
+   Brand colors from the website: navy #00263a, orange #ff8200.
+   Every slide has a navy footer (130px) with the white logo. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
+body { font-family: "Open Sans", sans-serif; -webkit-font-smoothing: antialiased; }
+
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: center; padding: 0 84px 130px; }
+.slide > * { position: relative; z-index: 2; }
+h1, h2 { font-family: "Raleway", sans-serif; font-weight: 800; letter-spacing: -1.5px; }
+
+/* footer shared by every slide */
+.foot { position: absolute !important; left: 0; right: 0; bottom: 0; height: 130px; padding: 0 84px;
+  display: flex; align-items: center; justify-content: space-between; background: #00263a; color: #8fa6b5; }
+.foot img { height: 50px; }
+.foot .count { font-family: "Raleway", sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 2px; }
+.foot .swipe { font-family: "Raleway", sans-serif; font-weight: 800; font-size: 34px; color: #ff8200; }
+
+/* cover: text at the bottom, over a darkened photo when there is one */
+.cover { background: #00263a center / cover no-repeat; color: #fff; justify-content: flex-end; padding-bottom: 210px; }
+.cover::before { content: ""; position: absolute; left: 0; top: 0; width: 26px; height: 100%; background: #ff8200; z-index: 3; }
+.cover.photo::after { content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 38, 58, 0.15) 0%, rgba(0, 38, 58, 0.55) 35%, rgba(0, 38, 58, 0.97) 68%); }
+.cover .kicker { font-family: "Raleway", sans-serif; font-weight: 800; font-size: 34px; letter-spacing: 6px;
+  text-transform: uppercase; color: #ff8200; margin-bottom: 40px; }
+.cover h1 { font-size: 128px; line-height: 1.02; margin-bottom: 44px; }
+.cover p { font-size: 52px; line-height: 1.38; color: #dbe5eb; }
+
+/* tip */
+.tip { background: #f5f6f8; color: #00263a; }
+.tip .num { width: 150px; height: 150px; border-radius: 50%; background: #ff8200; color: #fff;
+  font-family: "Raleway", sans-serif; font-weight: 800; font-size: 68px;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 70px; }
+.tip h2 { font-size: 112px; line-height: 1.04; margin-bottom: 52px; }
+.tip p { font-size: 60px; line-height: 1.42; color: #34434d; }
+
+/* before / after */
+.ba { background: #00263a; color: #fff; justify-content: flex-start; padding: 64px 56px 130px; }
+.ba h2 { font-size: 64px; text-align: center; margin-bottom: 40px; }
+.ba .pair { display: flex; gap: 24px; flex: 1; margin-bottom: 56px; }
+.ba figure { position: relative; flex: 1; border-radius: 20px; overflow: hidden; }
+.ba figure img { width: 100%; height: 100%; object-fit: cover; }
+.ba figure span { position: absolute; left: 22px; top: 22px; padding: 12px 28px; border-radius: 40px;
+  font-family: "Raleway", sans-serif; font-weight: 800; font-size: 34px; letter-spacing: 3px;
+  background: #00263a; color: #fff; }
+.ba figure.after span { background: #ff8200; }
+
+/* closing */
+.close { background: #ff8200; color: #00263a; }
+.close h2 { font-size: 118px; line-height: 1.03; margin-bottom: 52px; }
+.close p { font-size: 58px; line-height: 1.38; margin-bottom: 80px; color: #2b1a00; }
+.close .wa { display: inline-flex; align-items: center; gap: 30px; align-self: flex-start;
+  background: #00263a; color: #fff; border-radius: 90px; padding: 34px 60px;
+  font-family: "Raleway", sans-serif; font-weight: 800; font-size: 68px; }
+.close .wa i { font-size: 80px; color: #25d366; }
+.close .site { margin-top: 48px; font-family: "Raleway", sans-serif; font-weight: 800; font-size: 46px; }
+.nw { white-space: nowrap; }

@@ -63,7 +63,22 @@
       }
     ],
     "reviewNotes": "",
-    "warnings": []
+    "warnings": [],
+    "beforeAfter": {
+      "before": "social/photos/caminadora-6-antes.jpg",
+      "after": "social/photos/caminadora-6-despues.jpg",
+      "title": "Así quedan después del servicio"
+    },
+    "images": [
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/01.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/02.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/03.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/04.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/05.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/06.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/07.jpg",
+      "/social/2026-11-27-mantenimiento-preventivo-caminadora/08.jpg"
+    ]
   },
   {
     "id": "2026-11-27-mantenimiento-eliptica",
